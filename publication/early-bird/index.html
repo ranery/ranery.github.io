@@ -4,18 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> - Haoran You</title>
+	<title>Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks - Haoran You</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="" />
-<meta property="og:description" content="&#43;&#43;&#43; title: &ldquo;Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks&rdquo; date: 2019-10-02T18:03:59-05:00 draft: true &#43;&#43;&#43;" />
+	<meta property="og:title" content="Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks" />
+<meta property="og:description" content="(Frankle &amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ranery.github.io/publication/early-bird/" />
-
+<meta property="article:published_time" content="2019-10-02T18:03:59-05:00" />
+<meta property="article:modified_time" content="2019-10-02T18:03:59-05:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="&#43;&#43;&#43; title: &ldquo;Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks&rdquo; date: 2019-10-02T18:03:59-05:00 draft: true &#43;&#43;&#43;"/>
+<meta name="twitter:title" content="Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks"/>
+<meta name="twitter:description" content="(Frankle &amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -53,10 +54,10 @@ if (!doNotTrack) {
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/">Posts</a>
+			<a class="menu__link" href="/blogs/">Blogs</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/publication/">publication</a>
+			<a class="menu__link" href="/publication/">Publications</a>
 		</li>
 	</ul>
 </nav>
@@ -69,7 +70,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title"></h1>
+			<h1 class="post__title">Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</h1>
 			
 		</header>
 <div class="post__toc toc">
@@ -79,11 +80,7 @@ if (!doNotTrack) {
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<p>+++
-title: &ldquo;Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks&rdquo;
-date: 2019-10-02T18:03:59-05:00
-draft: true
-+++</p>
+			<p>(Frankle &amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.g., early stopping and low-precision training) at large learning rates. Our finding of EB tickets is consistent with recently reported observations that the key connectivity patterns of neural networks emerge early. Furthermore, we propose a mask distance metric that can be used to identify EB tickets with low computational overhead, without needing to know the true winning tickets that emerge after the full training. Finally, we leverage the existence of EB tickets and the proposed mask distance to develop efficient training methods, which are achieved by first identifying EB tickets via low-cost schemes, and then continuing to train merely the EB tickets towards the target accuracy. Experiments based on various deep networks and datasets validate: 1) the existence of EB tickets, and the effectiveness of mask distance in efficiently identifying them; and 2) that the proposed efficient training via EB tickets can achieve up to 4.7x energy savings while maintaining comparable or even better accuracy, demonstrating a promising and easily adopted method for tackling cost-prohibitive deep network training.</p>
 
 		</div>
 	</article>
