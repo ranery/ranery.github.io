@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haoran You</title>
-    <link>https://ranery.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Oct 2019 18:03:59 -0500</lastBuildDate>
     
-	<atom:link href="https://ranery.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>https://ranery.github.io/publication/early-bird/</link>
+      <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
+      <link>http://localhost:1313/publication/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>https://ranery.github.io/publication/early-bird/</guid>
-      <description>(Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
+      <guid>http://localhost:1313/publication/early-bird/</guid>
+      <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://ranery.github.io/post/hello-world/</link>
+      <link>http://localhost:1313/post/hello-world/</link>
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ranery.github.io/post/hello-world/</guid>
+      <guid>http://localhost:1313/post/hello-world/</guid>
       <description>This is first post!</description>
     </item>
     
