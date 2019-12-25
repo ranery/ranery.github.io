@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2019-12-24T20:40:26-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2019-12-24T20:40:26-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/hermann_park/</loc>
+    <lastmod>2019-12-24T20:40:26-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/lifestyle/</loc>
     <lastmod>2019-12-24T20:40:26-06:00</lastmod>
   </url>
   
@@ -28,16 +38,17 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/categories/research/</loc>
+    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/post/hello-world/</loc>
     <lastmod>2019-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://localhost:1313/bio/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
   </url>
   
   <url>
