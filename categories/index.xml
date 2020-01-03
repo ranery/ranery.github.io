@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Dec 2019 20:40:26 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 22:01:18 -0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/categories/research/</link>
+      <pubDate>Thu, 02 Jan 2020 22:01:18 -0600</pubDate>
+      
+      <guid>http://localhost:1313/categories/research/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Lifestyle</title>
@@ -17,15 +26,6 @@
       <pubDate>Tue, 24 Dec 2019 20:40:26 -0600</pubDate>
       
       <guid>http://localhost:1313/categories/lifestyle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>http://localhost:1313/categories/research/</link>
-      <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
-      
-      <guid>http://localhost:1313/categories/research/</guid>
       <description></description>
     </item>
     

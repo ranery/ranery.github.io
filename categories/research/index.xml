@@ -6,10 +6,20 @@
     <description>Recent content in Research on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 18:03:59 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 22:01:18 -0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cultivate Good Research Taste</title>
+      <link>http://localhost:1313/post/research_taste/</link>
+      <pubDate>Thu, 02 Jan 2020 22:01:18 -0600</pubDate>
+      
+      <guid>http://localhost:1313/post/research_taste/</guid>
+      <description>This post is supposed to be my reflect about cultivating good research taste as an individual researcher, and should always be maintained and reviewed!  
+Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted. Yet, I ignore its significance and influence for underlying research directions, which is outside of the scope of the algorithm&amp;rsquo;s original analysis.</description>
+    </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
