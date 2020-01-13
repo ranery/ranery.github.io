@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 22:01:18 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 15:24:07 -0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lottery Ticket Hypothesis</title>
+      <link>http://localhost:1313/post/lottery-ticket/</link>
+      <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
+      
+      <guid>http://localhost:1313/post/lottery-ticket/</guid>
+      <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
+Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
+    </item>
     
     <item>
       <title>Cultivate Good Research Taste</title>

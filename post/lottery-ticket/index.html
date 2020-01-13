@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lottery Ticket Hypothesis - Haoran You</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Lottery Ticket Hypothesis" />
+<meta property="og:description" content="Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
+Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/lottery-ticket/" />
+<meta property="article:published_time" content="2020-01-12T15:24:07-06:00" />
+<meta property="article:modified_time" content="2020-01-12T15:24:07-06:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lottery Ticket Hypothesis"/>
+<meta name="twitter:description" content="Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
+Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Haoran You" rel="home">
+				<div class="logo__title">Haoran You</div>
+				<div class="logo__tagline">Ph.D. student at Rice University EIC Lab</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/intro">Bio</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/">Blogs</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/publication/">Publications</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Lottery Ticket Hypothesis</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-01-12T15:24:07">2020-01-12</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/research" rel="category">Research</a></span>
+</div>
+</div>
+		</header><div class="content post__content clearfix">
+			
+
+<h2 id="lottery-ticket-hypothesis-https-openreview-net-forum-id-rjl-b3rcf7"><a href="https://openreview.net/forum?id=rJl-b3RcF7">Lottery Ticket Hypothesis</a></h2>
+
+<p><i><b>
+    <font color=black size=3>
+    A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the
+original network after training for at most the same number of iterations.
+    </font>
+</b></i></p>
+
+<h2 id="recent-surge">Recent Surge</h2>
+
+<ul>
+<li><a href="https://openreview.net/forum?id=BJxsrgStvr">Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</a>:
+
+<ul>
+<li>Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.g., early stopping and low-precision training) at large learning rates.</li>
+<li>Futher propose a mask distance metric that can be used to identify EB tickets with low computational overhead, without needing to know the true winning tickets that emerge after the full training.</li>
+<li>Finally leverage the existence of EB tickets and the proposed mask distance to develop efficient training methods, which are achieved by first identifying EB tickets via low-cost schemes, and then continuing to train merely the EB tickets towards the target accuracy.</li>
+</ul></li>
+<li><a href="https://arxiv.org/abs/1911.11134">Rigging the Lottery: Making All Tickets Winners</a>: Propose a dynamic sparse training scheme to achieve both memory and computational efficiency and more accurate model. The proposed scheme includes four steps, initialize sparsity distribution, update schedule, drop criterion and grow criterion. During training we drops connections according to the magnitude of weight and grow new connections according to the magnitude of gradient.
+
+<ul>
+<li><strong><em>Why it is called “making all tickets winners”?</em></strong> <br>
+Because given any sparisity initialization, the dynamic connectivity makes sure the final performance is good.</li>
+<li><strong><em>Why it can achieve selectable FLOPs before training?</em></strong> <br>
+The proposed dynamic sparse training does not change required FLOPs during training, thus allow us to decide on a specific inference cost prior to training.</li>
+</ul></li>
+<li><a href="https://arxiv.org/abs/1903.01611">Stabilizing the Lottery Ticket Hypothesis</a>: Revise the lottery ticket hypothesis with rewinding. Target at solving the limitation of LTH that iterative magnitude pruning (IMP) fails on deeper networks. Specifically, they modify IMP to rewind pruned subnetwork weights to their former values at iteration k rather than resetting them to iteration 0.</li>
+<li><a href="https://papers.nips.cc/paper/8618-deconstructing-lottery-tickets-zeros-signs-and-the-supermask.pdf">Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask</a>:
+
+<ul>
+<li>Provide insights about why rewind to initial value is better than random re-initialization. Specifically, the only important factor is the sign of initial value, as long as you keep the sign, re-initialization is not a deal breaker;</li>
+<li>Provide insights about why setting pruned weights to zero is important;</li>
+<li>Discover the existence of supermasks that can be directly applied to an untrained, randomly initialized network to produce a model with performance better than chance.</li>
+</ul></li>
+<li><a href="https://openreview.net/forum?id=rJlnB3C5Ym">Rethinking the Value of Network Pruning</a>: In large learning rate setting, initialization make no difference for the final performance while structure does. LTH experiments build on the small learning rate and shallow networks.</li>
+<li><a href="https://openreview.net/forum?id=B1VZqjAcYX">SNIP: Single-shot Network Pruning based on Connection Sensitivity</a>: Present a new approach that prunes a given network once at initialization prior to training by introducing a criterion based on connection sensitivity, the fundamental idea behind it is to identify elements (e.g. weights or neurons) that least degrade the performance when removed. This eliminates the needs of pretraining while achieves extremely sparse networks with virtually the same accuracy.</li>
+<li><a href="https://papers.nips.cc/paper/8739-one-ticket-to-win-them-all-generalizing-lottery-ticket-initializations-across-datasets-and-optimizers.pdf">One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers</a>: Demonstrate that we can reuse the same winning tickets across a variety of datasets and optimizers.</li>
+<li><a href="https://arxiv.org/abs/1902.09574">The State of Sparsity in Deep Neural Networks</a>: Empirically show that training from scratch using a learned sparse architecture (LTH) is not able to match the performance of the same model trained with sparsification as part of optimization process.</li>
+<li><strong>&hellip;</strong></li>
+</ul>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/research_taste/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Cultivate Good Research Taste</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Haoran You.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <span id="busuanzi_container_site_pv">
+        Total number of visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
