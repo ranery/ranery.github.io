@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 12 Mar 2020 21:02:07 -0500</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Efficient Training</title>
+      <link>http://localhost:1313/tags/efficient-training/</link>
+      <pubDate>Thu, 12 Mar 2020 21:02:07 -0500</pubDate>
+      
+      <guid>http://localhost:1313/tags/efficient-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lottery Ticket Hypothesis</title>
+      <link>http://localhost:1313/tags/lottery-ticket-hypothesis/</link>
+      <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
+      
+      <guid>http://localhost:1313/tags/lottery-ticket-hypothesis/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

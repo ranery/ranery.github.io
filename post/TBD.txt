@@ -1,0 +1,36 @@
+
+- efficient training
+	- introduction
+	- E^2 Train
+	- EB Train
+	- FracTrain
+
+- network pruning
+	- structured pruning
+	- unstructured pruning
+	- LTH vs. Rethink
+
+- network quantization
+	- Inference (weight; activation)
+	- Training (gradient; error)
+	- Dynamic Inference & Training
+
+- auto-ML
+	- intro
+	- NAS (neural architecture)
+	- DNN Training (learning to optimize)
+
+- architecture (cycle-accurate-simulator)
+	- intro
+	- SCNN
+	- Stripe BISMO
+	- DianNao
+	- ShiDianNao
+	- DaDianNao
+	- CambriconX
+	- Bit Pragmatic
+	- Smart Exchange
+
+- Shift Add
+
+- Neural Hardware Co-design

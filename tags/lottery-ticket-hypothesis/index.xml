@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Haoran You</title>
-    <link>http://localhost:1313/categories/research/</link>
-    <description>Recent content in Research on Haoran You</description>
+    <title>Lottery Ticket Hypothesis on Haoran You</title>
+    <link>http://localhost:1313/tags/lottery-ticket-hypothesis/</link>
+    <description>Recent content in Lottery Ticket Hypothesis on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2020 21:02:07 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 15:24:07 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/lottery-ticket-hypothesis/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Efficient Training</title>
-      <link>http://localhost:1313/post/efficient-training/</link>
-      <pubDate>Thu, 12 Mar 2020 21:02:07 -0500</pubDate>
-      
-      <guid>http://localhost:1313/post/efficient-training/</guid>
-      <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.</description>
-    </item>
     
     <item>
       <title>Lottery Ticket Hypothesis</title>
@@ -28,16 +19,6 @@
       <guid>http://localhost:1313/post/lottery-ticket/</guid>
       <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
 Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
-    </item>
-    
-    <item>
-      <title>Cultivate Good Research Taste</title>
-      <link>http://localhost:1313/post/research_taste/</link>
-      <pubDate>Thu, 02 Jan 2020 22:01:18 -0600</pubDate>
-      
-      <guid>http://localhost:1313/post/research_taste/</guid>
-      <description>This post is supposed to be my reflect about cultivating good research taste as an individual researcher, and should always be maintained and reviewed!  
-Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted. Yet, I ignore its significance and influence for underlying research directions, which is outside of the scope of the algorithm&amp;rsquo;s original analysis.</description>
     </item>
     
     <item>

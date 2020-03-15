@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Efficient Training - Haoran You</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Efficient Training" />
+<meta property="og:description" content="Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/efficient-training/" />
+<meta property="article:published_time" content="2020-03-12T21:02:07-05:00" />
+<meta property="article:modified_time" content="2020-03-12T21:02:07-05:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Efficient Training"/>
+<meta name="twitter:description" content="Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Haoran You" rel="home">
+				<div class="logo__title">Haoran You</div>
+				<div class="logo__tagline">Ph.D. student at Rice University EIC Lab</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/intro/">Bio</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/">Blogs</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/publication/">Publications</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Efficient Training</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-03-12T21:02:07">2020-03-12</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/research" rel="category">Research</a></span>
+</div>
+</div>
+		</header><div class="content post__content clearfix">
+			
+
+<h2 id="efficient-dnn-training-summary">Efficient DNN Training Summary</h2>
+
+<p>Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network.
+Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.g., FPGAs, ASICs, Mobile and IoT devices. Below are three most recently works putting huge efforts toward the efficient training goal.</p>
+
+<p><div align=center>
+    <img src="/img/DNN_source.png" alt="Trulli" style="width:50%;vertical-align: middle">
+    <span> <p></p> General DNN Training Scheme.</span>
+</div>
+<p></p></p>
+
+<hr />
+
+<ul>
+<li><p><strong><a href="https://arxiv.org/abs/1910.13349">E^2 Train (Neurips 2019)</a></strong>: To conduct more energy-efficient training of CNNs, so as to enable on-device training. This paper strive to reduce the energy cost during training, by dropping unnecessary computations from three complementary levels: stochastic mini-batch dropping <strong>on the data level</strong>; selective layer update <strong>on the model level</strong>; and sign prediction for low-cost, low-precision back-propagation, <strong>on the algorithm level</strong>.
+<div align=center>
+<img src="/img/E2Train.png" hspace="0" vspace="20" alt="Trulli" style="width:75%">
+</div>
+<p style = "margin:-20px"></p>
+<div align=left>
+<figcaption style="width:97%;float:center;">
+Fig.1 - An illustration of E^2 Train framework. On the data level, we adopt stochastic mini-batch dropping to aggressively reduce the training cost by, letting it see less mini-batches; On the model level, we dynamically skipping a subset of layers during both feed-forward and back-propagation; On the algorithm level, we propose a novel predictive sign gradient descent (PSG) algorithm, which predicts the sign of gradients using low-cost bit-level predictors, thereby completely bypassing the costly full-gradient computation.
+</figcaption>
+</div>
+<br>
+Benefit from aforementioned three techiniques, we are able to achieve <strong>over 80% total training energy cost savings</strong> measured by FPGA. For example, when training ResNet-74 on CIFAR-10, we achieve aggressive energy savings of &gt;90% and &gt;60%, while incurring a top-1 accuracy loss of only about 2% and 1.2%, respectively. When training ResNet-110 on CIFAR-100, an over 84% training energy saving is achieved without degrading inference accuracy.</p>
+
+<pre><code>Code avaialble at: https://github.com/RICE-EIC/E2Train
+</code></pre></li>
+</ul>
+
+<hr />
+
+<ul>
+<li><p><strong><a href="https://arxiv.org/abs/1909.11957">EB Train (ICLR 2020 Spotlight)</a></strong>: This paper bridges the gap between <a href="https://ranery.github.io/post/lottery-ticket/">Lottery Ticket Hypothesis</a> and efficient training goal. Since the identification of winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits, this paper discover for the first time that the winning tickets can be identified <strong>at the very early training stage (Early-Bird (EB) tickets)</strong> via low-cost training schemes, and propose a mask distance metric that can be used to identify EB tickets with low computational overhead, without needing to know the true winning tickets that emerge after the full training. Therfore, we can leverage the existence of EB tickets and the proposed mask distance to develop efficient training methods, which are achieved by first identifying EB tickets via low-cost schemes, and then continuing to train merely the EB tickets towards the target accuracy.
+<div align=justify>
+<img src="/img/EBTrain.png" alt="Trulli" hspace="100" vspace="10" style="width:65%">
+</div>
+<div align=left>
+<figcaption style="width:97%;float:center;">
+Fig.2 - A high-level overview of the difference between EB Train and existing progressive pruning and training.
+In particular, the progressive pruning and training scheme adopts a three-step routine of 1) training a large and dense model, 2) pruning it, and 3) then retraining the pruned model to restore performance, and these three steps can be iterated.
+The first step often dominates (e.g., occupy 75% training FLOPs) in terms of training energy and time costs.
+While EB Train replaces the aforementioned steps 1 and 2 with a lower-cost step of detecting the EB tickets.
+</figcaption>
+</div>
+<br>
+Experiments based on various deep networks and datasets validate: 1) the existence of EB tickets, and the effectiveness of mask distance in efficiently identifying them; and 2) that the proposed efficient  training via EB tickets can <strong>achieve up to 4.7× energy savings</strong> while maintaining comparable or even better accuracy, demonstrating a promising and easily adopted methodfor tackling the often cost-prohibitive deep network training.</p>
+
+<pre><code>Code avaialble at: https://github.com/RICE-EIC/Early-Bird-Tickets
+</code></pre></li>
+</ul>
+
+<hr />
+
+<ul>
+<li><strong><a href="404">FracTrain</a></strong>: Update once paper get accepted.</li>
+</ul>
+
+<p><br>
+<br></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/efficient-training/" rel="tag">Efficient Training</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/lottery-ticket/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Lottery Ticket Hypothesis</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Haoran You.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <span id="busuanzi_container_site_pv">
+        Total number of visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>

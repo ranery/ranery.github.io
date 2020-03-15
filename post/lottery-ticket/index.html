@@ -44,7 +44,7 @@ Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neu
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/bio/intro">Bio</a>
+			<a class="menu__link" href="/bio/intro/">Bio</a>
 		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/post/">Blogs</a>
@@ -123,9 +123,46 @@ The proposed dynamic sparse training does not change required FLOPs during train
 <p><div  align=center>
     <img src="/img/LTH.png" width = "800" alt="vacant_land"  />
 </div>
+<div align=center>
+    <figcaption style="width:97%;float:center;">
+    Fig.1 - Summary of recent exploration of Lottery Ticket Hypothesis.
+    </figcaption>
+</div>
+<br></p>
+
+<hr />
+
+<h2 id="theory-to-support-lottery-initialization">Theory to Support Lottery Initialization</h2>
+
+<ul>
+<li><a href="https://arxiv.org/abs/2002.08838">On the Decision Boundaries of Deep Neural Networks: A Tropical Geometry Perspective</a>: This paper support lottery initializaiton in theory from the perspective of <strong><a href="https://en.wikipedia.org/wiki/Tropical_geometry">Tropical Geometry</a></strong>.
+In general, this paper bridges the gap between <a href="https://en.wikipedia.org/wiki/Newton_polygon">newton polygon</a> (a well-developed mathematical tool) and the decision boundary of neural networks, by virtue of the proposed tropical geometry theory.
+In particular, we can then visulize the decision boundary through a polytope which can be generated from the neural network parameters.
+This helps us to visualize the effectiveness of different initialization.
+<div align=justify>
+<img src="/img/tropical.png" alt="Trulli" vspace="20" style="width:95%">
+</div>
+<div align=center>
+<figcaption style="width:97%;float:center;">
+Fig.2 - Visualization of the Newton polygon of different initialization.
+</figcaption>
+</div>
+<br></li>
+</ul>
+
+<p><br>
 <br></p>
 
 		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/lottery-ticket-hypothesis/" rel="tag">Lottery Ticket Hypothesis</a></li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 
@@ -133,6 +170,9 @@ The proposed dynamic sparse training does not change required FLOPs during train
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
 		<a class="post-nav__link" href="/post/research_taste/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Cultivate Good Research Taste</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/efficient-training/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Efficient Training</p></a>
 	</div>
 </nav>
 
@@ -156,5 +196,8 @@ The proposed dynamic sparse training does not change required FLOPs during train
 </footer>
 	</div>
 <script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script><script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>
