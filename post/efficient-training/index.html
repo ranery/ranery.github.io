@@ -54,6 +54,9 @@
 </nav>
 
 	</div>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]} })
+    </script>
 </header>
 		<div class="wrapper flex">
 			<div class="primary">
@@ -99,7 +102,7 @@ Here we focus on reducing total training times and training energy cost, aiming 
 <ul>
 <li><p><strong><a href="https://arxiv.org/abs/1910.13349">E^2 Train (Neurips 2019)</a></strong>: To conduct more energy-efficient training of CNNs, so as to enable on-device training. This paper strive to reduce the energy cost during training, by dropping unnecessary computations from three complementary levels: stochastic mini-batch dropping <strong>on the data level</strong>; selective layer update <strong>on the model level</strong>; and sign prediction for low-cost, low-precision back-propagation, <strong>on the algorithm level</strong>.
 <div align=center>
-<img src="/img/E2Train.png" hspace="0" vspace="20" alt="Trulli" style="width:75%">
+<img src="/img/E2Train.png" hspace="0" alt="Trulli" style="width:75%">
 </div>
 <p style = "margin:-20px"></p>
 <div align=left>
@@ -119,7 +122,7 @@ Benefit from aforementioned three techiniques, we are able to achieve <strong>ov
 <ul>
 <li><p><strong><a href="https://arxiv.org/abs/1909.11957">EB Train (ICLR 2020 Spotlight)</a></strong>: This paper bridges the gap between <a href="https://ranery.github.io/post/lottery-ticket/">Lottery Ticket Hypothesis</a> and efficient training goal. Since the identification of winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits, this paper discover for the first time that the winning tickets can be identified <strong>at the very early training stage (Early-Bird (EB) tickets)</strong> via low-cost training schemes, and propose a mask distance metric that can be used to identify EB tickets with low computational overhead, without needing to know the true winning tickets that emerge after the full training. Therfore, we can leverage the existence of EB tickets and the proposed mask distance to develop efficient training methods, which are achieved by first identifying EB tickets via low-cost schemes, and then continuing to train merely the EB tickets towards the target accuracy.
 <div align=justify>
-<img src="/img/EBTrain.png" alt="Trulli" hspace="100" vspace="10" style="width:65%">
+<img src="/img/EBTrain.png" alt="Trulli" hspace="100" style="width:65%">
 </div>
 <div align=left>
 <figcaption style="width:97%;float:center;">
@@ -151,7 +154,7 @@ Experiments based on various deep networks and datasets validate: 1) the existen
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/efficient-dnn-training/" rel="tag">Efficient DNN Training</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/dnn-training/" rel="tag">DNN Training</a></li>
 	</ul>
 </div>
 		</footer>
