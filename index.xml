@@ -6,10 +6,19 @@
     <description>Recent content on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2020 18:03:59 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 22:23:07 -0500</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Efficient DNN Training</title>
+      <link>http://localhost:1313/post/efficient-training/</link>
+      <pubDate>Fri, 02 Oct 2020 22:23:07 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/efficient-training/</guid>
+      <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.</description>
+    </item>
     
     <item>
       <title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </title>
@@ -46,15 +55,6 @@
       <guid>http://localhost:1313/post/dnn-training/</guid>
       <description>Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:
  On the optimization and generalization perspective On the frequency domain perspective What happens during the early phase of DNN training  On the Optimization and Generalization Perspective The connection between optimization and generalization of deep neural networks (DNN) is not fully understood.</description>
-    </item>
-    
-    <item>
-      <title>Efficient DNN Training</title>
-      <link>http://localhost:1313/post/efficient-training/</link>
-      <pubDate>Thu, 12 Mar 2020 21:02:07 -0500</pubDate>
-      
-      <guid>http://localhost:1313/post/efficient-training/</guid>
-      <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.</description>
     </item>
     
     <item>
