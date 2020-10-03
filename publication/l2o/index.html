@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize - Haoran You</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="[ECCV 2020] HALO: Hardware-Aware Learning to Optimize" />
+<meta property="og:description" content="Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained. Neither traditional hand-crafted (e.g., SGD, Adagrad, and Adam) nor existing meta optimizers are specifically designed to meet those challenges, as the former requires tedious hyper-parameter tuning while the latter are often costly due to the meta algorithms’ own overhead." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/publication/l2o/" />
+<meta property="article:published_time" content="2020-05-02T18:03:59-05:00" />
+<meta property="article:modified_time" content="2020-05-02T18:03:59-05:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[ECCV 2020] HALO: Hardware-Aware Learning to Optimize"/>
+<meta name="twitter:description" content="Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained. Neither traditional hand-crafted (e.g., SGD, Adagrad, and Adam) nor existing meta optimizers are specifically designed to meet those challenges, as the former requires tedious hyper-parameter tuning while the latter are often costly due to the meta algorithms’ own overhead."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Haoran You" rel="home">
+				<div class="logo__title">Haoran You</div>
+				<div class="logo__tagline">Ph.D. student at Rice University EIC Lab</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/intro/">Bio</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/">Blogs</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/publication/">Publications</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]} })
+    </script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-05-02T18:03:59">2020-05-02</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/research" rel="category">Research</a></span>
+</div>
+</div>
+		</header><div class="content post__content clearfix">
+			
+
+<h2 id="i-accepted-as-font-color-red-size-5-eccv-2020-regular-paper-font-i"><i>Accepted as <font color=red size=5>ECCV 2020 regular paper!</font></i></h2>
+
+<hr />
+
+<h2 id="font-color-black-size-4-abstract-font"><font color=black size=4>Abstract:</font></h2>
+
+<p>There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained. Neither traditional hand-crafted (e.g., SGD, Adagrad, and Adam) nor existing meta optimizers are specifically designed to meet those challenges, as the former requires tedious hyper-parameter tuning while the latter are often costly due to the meta algorithms’ own overhead. To this end, we propose hardware-aware learning to optimize (HALO), a practical meta optimizer dedicated to resource-efficient on-device adaptation. Our HALO optimizer features the following highlights: (1) faster adaptation speed (i.e., taking fewer data or iterations to reach a specified accuracy) by introducing a new regularizer to promote empirical generalization; and (2) lower per-iteration complexity, thanks to a stochastic structural sparsity regularizer being enforced. Furthermore, the optimizer itself is designed as a very light-weight RNN and thus incurs negligible overhead. Ablation studies and experiments on five datasets, six optimizees, and two state-of-the-art (SOTA) edge AI devices validate that, while always achieving a better accuracy (↑0.46% - ↑20.28%), HALO can greatly trim down the energy cost (up to ↓60%) in adaptation, quantified using an IoT device or SOTA simulator.</p>
+
+<hr />
+
+<p><bold>Code now is available at <a href="https://github.com/RICE-EIC/HALO">https://github.com/RICE-EIC/HALO</a> !</bold></p>
+
+<hr />
+
+<h3 id="bibtex">Bibtex</h3>
+
+<p>If you find this work inspiring, please cite:</p>
+
+<pre><code>@InProceedings{li_2020_halo,
+author = {Li, Chaojian and Chen, Tianlong and You, Haoran and Wang, Zhangyang and Lin, Yingyan},
+title = {HALO: Hardware-Aware Learning to Optimize},
+booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+month = {September},
+year = {2020}
+}
+</code></pre>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/learning-to-optimize/" rel="tag">Learning to Optimize</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/efficient-dnn-training/" rel="tag">Efficient DNN Training</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/publication/smart-exchange/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/publication/fractrain/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Haoran You.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <span id="busuanzi_container_site_pv">
+        Total number of visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
