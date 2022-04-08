@@ -6,10 +6,19 @@
     <description>Recent content in Research on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 22:23:07 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 15:51:28 -0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Haoran You</title>
+      <link>http://localhost:1313/bio/intro/</link>
+      <pubDate>Thu, 07 Apr 2022 15:51:28 -0600</pubDate>
+      
+      <guid>http://localhost:1313/bio/intro/</guid>
+      <description>Hi all, welcome to my personal website. I am a 3rd year PhD student in the ECE department of Rice University, who is passinoate about efficient/automated ML and algorithm-hardware co-design!</description>
+    </item>
     
     <item>
       <title>Efficient DNN Training</title>
@@ -17,7 +26,7 @@
       <pubDate>Fri, 02 Oct 2020 22:23:07 -0500</pubDate>
       
       <guid>http://localhost:1313/post/efficient-training/</guid>
-      <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.</description>
+      <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network.</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0600</pubDate>
       
       <guid>http://localhost:1313/publication/shiftaddnet/</guid>
-      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks. This paper presented ShiftAddNet, whose main inspiration is drawn from a common practice in energy-efficient hardware implementation, that is, multiplication can be instead performed with additions and logical bit-shifts.</description>
+      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks.</description>
     </item>
     
     <item>
@@ -35,7 +44,7 @@
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/fractrain/</guid>
-      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs. As reducing precision is one of the most effective knobs for boosting training time/energy efficiency, there has been a growing interest in low-precision DNN training.</description>
+      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.</description>
     </item>
     
     <item>
@@ -44,7 +53,7 @@
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/l2o/</guid>
-      <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained. Neither traditional hand-crafted (e.g., SGD, Adagrad, and Adam) nor existing meta optimizers are specifically designed to meet those challenges, as the former requires tedious hyper-parameter tuning while the latter are often costly due to the meta algorithms’ own overhead.</description>
+      <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.</description>
     </item>
     
     <item>
@@ -53,8 +62,7 @@
       <pubDate>Sat, 21 Mar 2020 22:23:07 -0500</pubDate>
       
       <guid>http://localhost:1313/post/dnn-training/</guid>
-      <description>Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:
- On the optimization and generalization perspective On the frequency domain perspective What happens during the early phase of DNN training  On the Optimization and Generalization Perspective The connection between optimization and generalization of deep neural networks (DNN) is not fully understood.</description>
+      <description>Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:</description>
     </item>
     
     <item>
@@ -63,7 +71,7 @@
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/smart-exchange/</guid>
-      <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs). We develop a novel algorithm to enforce a specially favorable DNN weight structure, where each layerwise weight matrix can be stored as the product of a small basis matrix and a large sparse coefficient matrix whose non-zero elements are all power-of-2.</description>
+      <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).</description>
     </item>
     
     <item>
@@ -72,8 +80,7 @@
       <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
       
       <guid>http://localhost:1313/post/lottery-ticket/</guid>
-      <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
-Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
+      <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.</description>
     </item>
     
     <item>
@@ -83,7 +90,7 @@ Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neu
       
       <guid>http://localhost:1313/post/research_taste/</guid>
       <description>This post is supposed to be my reflect about cultivating good research taste as an individual researcher, and should always be maintained and reviewed!  
-Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted. Yet, I ignore its significance and influence for underlying research directions, which is outside of the scope of the algorithm&amp;rsquo;s original analysis.</description>
+Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted.</description>
     </item>
     
     <item>
@@ -92,7 +99,7 @@ Updates  01/02/2020 Today I find one paper I have criticized got accepted as an 
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/early-bird/</guid>
-      <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.</description>
+      <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     
     <item>
@@ -101,7 +108,7 @@ Updates  01/02/2020 Today I find one paper I have criticized got accepted as an 
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/bayesian-cyclegan/</guid>
-      <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators. However, it remains challenging to stabilize the training process and thus cyclic models fall into mode collapse accompanied by the success of discriminator. To address this problem, we propose an novel Bayesian cyclic model and an integrated cyclic framework for interdomain mappings.</description>
+      <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
     </item>
     
   </channel>

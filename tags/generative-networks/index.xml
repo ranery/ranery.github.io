@@ -17,7 +17,7 @@
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/bayesian-cyclegan/</guid>
-      <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators. However, it remains challenging to stabilize the training process and thus cyclic models fall into mode collapse accompanied by the success of discriminator. To address this problem, we propose an novel Bayesian cyclic model and an integrated cyclic framework for interdomain mappings.</description>
+      <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
     </item>
     
   </channel>

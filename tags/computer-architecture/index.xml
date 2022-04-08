@@ -17,7 +17,7 @@
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/smart-exchange/</guid>
-      <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs). We develop a novel algorithm to enforce a specially favorable DNN weight structure, where each layerwise weight matrix can be stored as the product of a small basis matrix and a large sparse coefficient matrix whose non-zero elements are all power-of-2.</description>
+      <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).</description>
     </item>
     
   </channel>

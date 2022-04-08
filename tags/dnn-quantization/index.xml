@@ -17,7 +17,7 @@
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
       <guid>http://localhost:1313/publication/fractrain/</guid>
-      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs. As reducing precision is one of the most effective knobs for boosting training time/energy efficiency, there has been a growing interest in low-precision DNN training.</description>
+      <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.</description>
     </item>
     
   </channel>

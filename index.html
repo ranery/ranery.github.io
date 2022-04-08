@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/" />
 
-<meta property="og:updated_time" content="2020-10-02T22:23:07-05:00" />
+<meta property="og:updated_time" content="2022-04-07T15:51:28-06:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Haoran You"/>
@@ -65,6 +65,33 @@
 			
 <main class="main list" role="main">
 	<article class="list__item post">
+	<figure class="list__thumbnail">
+		<a href="http://localhost:1313/bio/intro/">
+			<img src="/img/hryou.jpg" alt="Haoran You" />
+		</a>
+	</figure>
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/bio/intro/" rel="bookmark">
+			Haoran You
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2022-04-07T15:51:28">2022-04-07</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/research" rel="category">Research</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Hi all, welcome to my personal website. I am a 3rd year PhD student in the ECE department of Rice University, who is passinoate about efficient/automated ML and algorithm-hardware co-design!
+	</div>
+</article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/post/efficient-training/" rel="bookmark">
@@ -84,7 +111,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network. Here we focus on reducing total training times and training energy cost, aiming at the deployment on resource-constrainted platforms, e.
+		Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -106,7 +133,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks. This paper presented ShiftAddNet, whose main inspiration is drawn from a common practice in energy-efficient hardware implementation, that is, multiplication can be instead performed with additions and logical bit-shifts.
+		Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -128,7 +155,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs. As reducing precision is one of the most effective knobs for boosting training time/energy efficiency, there has been a growing interest in low-precision DNN training.
+		Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -150,7 +177,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained. Neither traditional hand-crafted (e.g., SGD, Adagrad, and Adam) nor existing meta optimizers are specifically designed to meet those challenges, as the former requires tedious hyper-parameter tuning while the latter are often costly due to the meta algorithms’ own overhead.
+		Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -173,7 +200,6 @@
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:
- On the optimization and generalization perspective On the frequency domain perspective What happens during the early phase of DNN training  On the Optimization and Generalization Perspective The connection between optimization and generalization of deep neural networks (DNN) is not fully understood.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -195,7 +221,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs). We develop a novel algorithm to enforce a specially favorable DNN weight structure, where each layerwise weight matrix can be stored as the product of a small basis matrix and a large sparse coefficient matrix whose non-zero elements are all power-of-2.
+		Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -217,8 +243,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.  
-Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks:  Discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.
+		Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -241,7 +266,7 @@ Recent Surge  Drawing Early-Bird Tickets: Towards More Efficient Training of Neu
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		This post is supposed to be my reflect about cultivating good research taste as an individual researcher, and should always be maintained and reviewed!  
-Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted. Yet, I ignore its significance and influence for underlying research directions, which is outside of the scope of the algorithm&rsquo;s original analysis.
+Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -263,30 +288,7 @@ Updates  01/02/2020 Today I find one paper I have criticized got accepted as an 
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Before applying for Ph.D., I heard that Rice University is of highest happiness index. I assured this is the case for undergraduates while not applied to Ph.D. students since environment makes no difference for those living in office (XD). However today&rsquo;s impromptu visit to the neighbor &ldquo;Hermann Park&rdquo; while I was waiting for the food delivery at nightfall almost changes my mind.
-Go out of the school and cross the road to the riverside in the park, I sat on a bench by the river and watched all kinds of people go by, like an old man but not wise enough.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/publication/early-bird/" rel="bookmark">
-			[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-10-02T18:03:59">2019-10-02</time>
-</div>
-
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/research" rel="category">Research</a></span>
-</div>
-</div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Accepted as spotlight oral paper! Abstract: (Frankle &amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations. However, the identification of these winning tickets still requires the costly train-prune-retrain process, limiting their practical benefits. In this paper, we discover for the first time that the winning tickets can be identified at the very early training stage, which we term as early-bird (EB) tickets, via low-cost training schemes (e.
+		Before applying for Ph.D., I heard that Rice University is of highest happiness index. I assured this is the case for undergraduates while not applied to Ph.D. students since environment makes no difference for those living in office (XD).
 	</div>
 </article>
 </main>
@@ -303,11 +305,11 @@ Go out of the school and cross the road to the riverside in the park, I sat on a
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/bio/intro/">Haoran You</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/efficient-training/">Efficient DNN Training</a></li>
 			<li class="widget__item"><a class="widget__link" href="/publication/shiftaddnet/">[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </a></li>
 			<li class="widget__item"><a class="widget__link" href="/publication/fractrain/">[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </a></li>
 			<li class="widget__item"><a class="widget__link" href="/publication/l2o/">[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/dnn-training/">DNN Training Stages Understanding</a></li>
 		</ul>
 	</div>
 </div>
