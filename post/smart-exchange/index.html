@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network  - Haoran You</title>
+	<title>[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation - Haoran You</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network " />
-<meta property="og:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks." />
+	<meta property="og:title" content="[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation" />
+<meta property="og:description" content="Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/publication/shiftaddnet/" />
-<meta property="article:published_time" content="2020-09-22T18:03:59-06:00" />
-<meta property="article:modified_time" content="2020-09-22T18:03:59-06:00" />
+<meta property="og:url" content="http://localhost:1313/post/smart-exchange/" />
+<meta property="article:published_time" content="2020-02-02T18:03:59-05:00" />
+<meta property="article:modified_time" content="2020-02-02T18:03:59-05:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network "/>
-<meta name="twitter:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks."/>
+<meta name="twitter:title" content="[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation"/>
+<meta name="twitter:description" content="Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs)."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -61,11 +61,11 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </h1>
+			<h1 class="post__title">[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-09-22T18:03:59">2020-09-22</time>
+	<time class="meta__text" datetime="2020-02-02T18:03:59">2020-02-02</time>
 </div>
 
 <div class="meta__item-categories meta__item">
@@ -77,19 +77,13 @@
 <div class="content post__content clearfix">
 			
 
-<h2 id="i-accepted-as-font-color-red-size-5-neurips-2020-regular-paper-font-i"><i>Accepted as <font color=red size=5>NeurIPS 2020 regular paper!</font></i></h2>
+<h2 id="i-accepted-as-font-color-red-size-5-isca-2020-regular-paper-font-i"><i>Accepted as <font color=red size=5>ISCA 2020 regular paper!</font></i></h2>
 
 <hr />
 
 <h2 id="font-color-black-size-4-abstract-font"><font color=black size=4>Abstract:</font></h2>
 
-<p>Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks. This paper presented ShiftAddNet, whose main inspiration is drawn from a common practice in energy-efficient hardware implementation, that is, multiplication can be instead performed with additions and logical bit-shifts. We leverage this idea to explicitly parameterize deep networks in this way, yielding a new type of deep network that involves only bit-shift and additive weight layers. This hardware-inspired ShiftAddNet immediately lead to both energy-efficient inference and training, without compromising the expressive capacity compared to standard DNNs. The two complementary operations types (bit-shift and add) additionally enable finer-grained control of the model&rsquo;s learning capacity, leading to more flexible trade-off between accuracy and (training) efficiency, as well as improved robustness to quantization. We conduct extensive experiments and ablation studies, all backed up by our FPGA-based ShiftAddNet implementation and real on-board measurements. Compared to existing DNNs or other multiplication-less models, ShiftAddNet aggressively reduces over 80% the hardware-quantified energy cost of DNN training and inference, while offering comparable or better accuracies.</p>
-
-<hr />
-
-<!-- <bold>Code now is available at https://github.com/RICE-EIC/HALO !</bold> -->
-
-<p><bold>Code will be avilable soon !</bold></p>
+<p>We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs). We develop a novel algorithm to enforce a specially favorable DNN weight structure, where each layerwise weight matrix can be stored as the product of a small basis matrix and a large sparse coefficient matrix whose non-zero elements are all power-of-2. To our best knowledge, this algorithm is the first formulation that integrates three mainstream model compression ideas: sparsification or pruning, decomposition, and quantization, into one unified framework. The resulting sparse and readily-quantized DNN thus enjoys greatly reduced energy consumption in data movement as well as weight storage. On top of that, we further design a dedicated accelerator to fully utilize the SmartExchange-enforced weights to improve both energy efficiency and latency performance. Extensive experiments show that 1) on the algorithm level, SmartExchange outperforms state-of-the-art compression techniques, including merely sparsification or pruning, decomposition, and quantization, in various ablation studies based on nine DNN models and four datasets; and 2) on the hardware level, the proposed SmartExchange based accelerator can improve the energy efficiency by up to 6.7× and the speedup by up to 19.2× over four state-of-the-art DNN accelerators, when benchmarked on seven DNN models (including four standard DNNs, two compact DNN models, and one segmentation model) and three datasets.</p>
 
 <hr />
 
@@ -97,7 +91,12 @@
 
 <p>If you find this work inspiring, please cite:</p>
 
-<pre><code>comming soon
+<pre><code>@article{zhao2020smartexchange,
+  title={SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation},
+  author={Zhao, Yang and Chen, Xiaohan and Wang, Yue and Li, Chaojian and You, Haoran and Fu, Yonggan and Xie, Yuan and Wang, Zhangyang and Lin, Yingyan},
+  journal={arXiv preprint arXiv:2005.03403},
+  year={2020}
+}
 </code></pre>
 
 		</div>
@@ -106,7 +105,7 @@
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/efficient-dnn-training/" rel="tag">Efficient DNN Training</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/computer-architecture/" rel="tag">Computer Architecture</a></li>
 	</ul>
 </div>
 		</footer>
@@ -116,7 +115,10 @@
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publication/fractrain/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </p></a>
+		<a class="post-nav__link" href="/post/lottery-ticket/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Lottery Ticket Hypothesis</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/dnn-training/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">DNN Training Stages Understanding</p></a>
 	</div>
 </nav>
 

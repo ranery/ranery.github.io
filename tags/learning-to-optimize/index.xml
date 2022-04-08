@@ -13,6 +13,15 @@
     
     <item>
       <title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</title>
+      <link>http://localhost:1313/post/l2o/</link>
+      <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/l2o/</guid>
+      <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.</description>
+    </item>
+    
+    <item>
+      <title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</title>
       <link>http://localhost:1313/publication/l2o/</link>
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       

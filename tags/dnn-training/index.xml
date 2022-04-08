@@ -31,6 +31,15 @@
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
+      <link>http://localhost:1313/post/early-bird/</link>
+      <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/early-bird/</guid>
+      <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
+    </item>
+    
+    <item>
+      <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
       <link>http://localhost:1313/publication/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       

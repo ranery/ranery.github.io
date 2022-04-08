@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network  - Haoran You</title>
+	<title>[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training  - Haoran You</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network " />
-<meta property="og:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks." />
+	<meta property="og:title" content="[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training " />
+<meta property="og:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/publication/shiftaddnet/" />
-<meta property="article:published_time" content="2020-09-22T18:03:59-06:00" />
-<meta property="article:modified_time" content="2020-09-22T18:03:59-06:00" />
+<meta property="og:url" content="http://localhost:1313/post/fractrain/" />
+<meta property="article:published_time" content="2020-09-22T18:03:59-05:00" />
+<meta property="article:modified_time" content="2020-09-22T18:03:59-05:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network "/>
-<meta name="twitter:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks."/>
+<meta name="twitter:title" content="[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training "/>
+<meta name="twitter:description" content="Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -61,7 +61,7 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </h1>
+			<h1 class="post__title">[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
@@ -83,7 +83,7 @@
 
 <h2 id="font-color-black-size-4-abstract-font"><font color=black size=4>Abstract:</font></h2>
 
-<p>Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks. This paper presented ShiftAddNet, whose main inspiration is drawn from a common practice in energy-efficient hardware implementation, that is, multiplication can be instead performed with additions and logical bit-shifts. We leverage this idea to explicitly parameterize deep networks in this way, yielding a new type of deep network that involves only bit-shift and additive weight layers. This hardware-inspired ShiftAddNet immediately lead to both energy-efficient inference and training, without compromising the expressive capacity compared to standard DNNs. The two complementary operations types (bit-shift and add) additionally enable finer-grained control of the model&rsquo;s learning capacity, leading to more flexible trade-off between accuracy and (training) efficiency, as well as improved robustness to quantization. We conduct extensive experiments and ablation studies, all backed up by our FPGA-based ShiftAddNet implementation and real on-board measurements. Compared to existing DNNs or other multiplication-less models, ShiftAddNet aggressively reduces over 80% the hardware-quantified energy cost of DNN training and inference, while offering comparable or better accuracies.</p>
+<p>Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs. As reducing precision is one of the most effective knobs for boosting training time/energy efficiency, there has been a growing interest in low-precision DNN training. In this paper, we explore from an orthogonal direction: how to fractionally squeeze out more training cost savings from the most redundant bit-level, progressively along the training trajectory and dynamically per input. Specifically, we propose FracTrain which integrates (i) progressive fractional quantization which gradually increases the bitwidth of activations, weights, and gradients that will not reach the precision of SOTA static quantized DNN training until the final training stage, and (ii) dynamic fractional quantization which assigns bitwidths to both the activations and gradients of each layer in an input-adaptive manner, for only &ldquo;fractionally&rdquo; updating layer parameters. Extensive simulations and ablation studies (six models, four datasets, and three training settings including standard, adaptation, and fine-tuning) validate the effectiveness of FracTrain in reducing computational cost and hardware-quantified energy/latency of DNN training while achieving a comparable or better (-0.12% ~ +1.87%) accuracy. For example, when training ResNet-74 on CIFAR-10, FracTrain achieves 77.6% and 53.5% computational cost and training latency savings, respectively, compared with the best SOTA baseline, while achieving a comparable (-0.07%) accuracy.</p>
 
 <hr />
 
@@ -106,6 +106,7 @@
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/dnn-quantization/" rel="tag">DNN Quantization</a></li>
 		<li class="tags__item"><a class="tags__link btn" href="/tags/efficient-dnn-training/" rel="tag">Efficient DNN Training</a></li>
 	</ul>
 </div>
@@ -116,7 +117,10 @@
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publication/fractrain/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </p></a>
+		<a class="post-nav__link" href="/post/l2o/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/shiftaddnet/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </p></a>
 	</div>
 </nav>
 

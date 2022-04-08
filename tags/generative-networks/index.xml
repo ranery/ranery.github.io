@@ -13,6 +13,15 @@
     
     <item>
       <title>[IEEE TNNLS] Bayesian Cycle-Consistent Generative Adversarial Networks via Marginalizing Latent Sampling</title>
+      <link>http://localhost:1313/post/bayesian-cyclegan/</link>
+      <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/bayesian-cyclegan/</guid>
+      <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
+    </item>
+    
+    <item>
+      <title>[IEEE TNNLS] Bayesian Cycle-Consistent Generative Adversarial Networks via Marginalizing Latent Sampling</title>
       <link>http://localhost:1313/publication/bayesian-cyclegan/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       

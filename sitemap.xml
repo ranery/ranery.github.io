@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/shiftaddnet/</loc>
+    <lastmod>2020-09-22T18:03:59-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/publication/shiftaddnet/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
@@ -63,6 +68,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/fractrain/</loc>
+    <lastmod>2020-09-22T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/publication/fractrain/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
@@ -70,6 +80,11 @@
   <url>
     <loc>http://localhost:1313/tags/dnn-quantization/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/l2o/</loc>
+    <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
@@ -85,6 +100,11 @@
   <url>
     <loc>http://localhost:1313/post/dnn-training/</loc>
     <lastmod>2020-03-21T22:23:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/smart-exchange/</loc>
+    <lastmod>2020-02-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
@@ -123,7 +143,17 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/early-bird/</loc>
+    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/publication/early-bird/</loc>
+    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/bayesian-cyclegan/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
