@@ -6,7 +6,7 @@
     <description>Recent content in Research on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Aug 2022 15:51:28 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 17 Nov 2022 15:51:28 -0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Haoran You</title>
       <link>http://localhost:1313/bio/intro/</link>
-      <pubDate>Wed, 17 Aug 2022 15:51:28 -0600</pubDate>
+      <pubDate>Thu, 17 Nov 2022 15:51:28 -0600</pubDate>
       
       <guid>http://localhost:1313/bio/intro/</guid>
       <description>Hi all, welcome to my personal website. I am a 4th year PhD student in the ECE department of Rice University, who is passinoate about efficient/automated ML and algorithm-hardware co-design!</description>
