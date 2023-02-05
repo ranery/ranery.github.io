@@ -1009,6 +1009,26 @@ textarea {
 	border: 1px solid rgba(0, 0, 0, .1);
 }
 
+/* Profile */
+.profile__container {
+	text-align: center;
+}
+
+.profile__avatar {
+	width: 126px;
+	height: 126px;
+	display: inline-block;
+	background-size: cover;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 3px #c5273c;
+}
+
+.profile__name {
+	text-align: center;
+}
+
 /* Widgets */
 .widget {
 	margin-bottom: 25px;
