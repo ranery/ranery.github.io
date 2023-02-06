@@ -1,4 +1,4 @@
-Personal website
+# Personal website
 
-## ranery.github.io
-## haoranyou.com
+### Domain 1: haoranyou.com
+### Domain 2: ranery.github.io
