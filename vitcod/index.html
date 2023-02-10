@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="EyeCoD: Eye Tracking System Acceleration via FlatCam-based Algorithm & Accelerator Co-Design">
+  <meta name="keywords" content="Eye Tracking Systems, VR/AR, Algorithm-hardware Co-Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EyeCoD</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R64M7EE01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-5R64M7EE01');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="http://haoranyou.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://sites.google.com/view/shiftaddnas">
+            ShiftAddNAS
+          </a>
+          <!-- <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-2 publication-title">EyeCoD: Eye Tracking System Acceleration via FlatCam-based Algorithm & Accelerator Co-Design</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://haoranyou.com">Haoran You</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Cheng Wan</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.yangkatiezhao.net/">Yang Zhao</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Zhongzhi Yu</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Yonggan Fu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jiayi-yuan-091456190/">Jiayi Yuan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shang-wu-400948232/">Shang Wu</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shunyao-zhang/">Shunyao Zhang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Yongan Zhang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Chaojian Li</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://vivekboominathan.com/">Vivek Boominathan</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/ziyun-li-80136886/">Ziyun Li</a><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Yingyan Lin</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Georgia Institute of Technology,</span>
+            <span class="author-block"><sup>2</sup>Rice University,</span>
+            <span class="author-block"><sup>3</sup>Meta Reality Lab</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2206.00877"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2206.00877"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/XsUSVh34wnA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/GATECH-EIC/EyeCoD"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://research.facebook.com/openeds-challenge/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/eyecod.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+      />
+      <br><br>
+      <h2 class="is-size-4 has-text-centered">
+        Overview of EyeCoD, which is an algorithm and accelerator co-design framework for end-to-end eye tracking acceleration.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<hr></hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Eye tracking has become an essential human-machine interaction modality for providing immersive 
+            experience in numerous virtual and augmented reality (VR/AR) applications desiring high throughput 
+            (e.g., 240 FPS), small-form, and enhanced visual privacy. 
+          </p>
+          <p>
+            However, existing eye tracking systems are still limited by their: (1) large form-factor largely due 
+            to the adopted bulky lens-based cameras; and (2) high communication cost required between the camera 
+            and backend processor, thus prohibiting their more extensive applications.
+          </p>
+          <p>
+            To this end, we propose a lensless FlatCam-based eye tracking algorithm and accelerator co-design 
+            framework dubbed EyeCoD to enable eye tracking systems with a much reduced form-factor and boosted 
+            system efficiency without sacrificing the tracking accuracy, paving the way for next-generation eye 
+            tracking solutions. 
+            <b><i>On the system level,</i></b> we advocate the use of lensless FlatCams to facilitate the 
+            small form-factor need in mobile eye tracking systems. 
+            <b><i>On the algorithm level,</i></b> EyeCoD integrates a predict-then-focus pipeline that first predicts 
+            the region-of-interest (ROI) via segmentation and then only focuses on the ROI parts to estimate 
+            gaze directions, greatly reducing redundant computations and data movements. 
+            <b><i>On the hardware level,</i></b> we further develop a dedicated accelerator that (1) integrates a novel 
+            workload orchestration between the aforementioned segmentation and gaze estimation models, 
+            (2) leverages intra-channel reuse opportunities for depth-wise layers, and 
+            (3) utilizes input feature-wise partition to save activation memory size. 
+          </p>
+          <p>
+            Extensive experiments validate that our EyeCoD consistently reduces both the communication and 
+            computation costs, leading to an overall system speedup of 10.95x, 3.21x, and 12.85x over CPUs, 
+            GPUs, and a prior-art eye tracking processor called CIS-GEP, respectively, 
+            while maintaining the tracking accuracy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XsUSVh34wnA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+
+    <br>
+    <hr></hr>
+    <br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <!-- ISCA. -->
+      <div class="column">
+        <h2 class="title is-3">ISCA'22</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XsUSVh34wnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!--/ ISCA. -->
+
+      <!-- VLSI. -->
+      <div class="column">
+        <h2 class="title is-3">VLSI'22</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-bRBCVfF-q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!--/ VLSI. -->
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<br>
+  <hr></hr>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{you2022eyecod,
+    title={EyeCoD: eye tracking system acceleration via flatcam-based algorithm \& accelerator co-design},
+    author={You, Haoran and Wan, Cheng and Zhao, Yang and Yu, Zhongzhi and Fu, Yonggan and Yuan, Jiayi and Wu, Shang and Zhang, Shunyao and Zhang, Yongan and Li, Chaojian and others},
+    booktitle={Proceedings of the 49th Annual International Symposium on Computer Architecture},
+    pages={610--622},
+    year={2022}
+}
+
+@inproceedings{zhao2022flatcam,
+  title={i-FlatCam: A 253 FPS, 91.49 $\mu$J/Frame Ultra-Compact Intelligent Lensless Camera for Real-Time and Efficient Eye Tracking in VR/AR},
+  author={Zhao, Yang and Li, Ziyun and Fu, Yonggan and Zhang, Yongan and Li, Chaojian and Wan, Cheng and You, Haoran and Wu, Shang and Ouyang, Xu and Boominathan, Vivek and others},
+  booktitle={2022 IEEE Symposium on VLSI Technology and Circuits (VLSI Technology and Circuits)},
+  pages={108--109},
+  year={2022},
+  organization={IEEE}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2206.00877">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ranery" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/eyecod-toppick/eyecod-toppick.github.io">source code</a> 
+              (adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>) of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
