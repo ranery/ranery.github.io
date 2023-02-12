@@ -4,7 +4,7 @@
 
 Haoran You, Zhanyi Sun, Huihong Shi, Zhongzhi Yu, Yang Zhao, Yongan Zhang, Chaojian Li, Baopu Li, Yingyan Lin
 
-Selected as an IEEE Micro Top Pick of 2023. More infos are in eyecod-toppick.github.io
+Receive Meta Faculty Research Award.
 
 ---
 
@@ -13,11 +13,10 @@ Selected as an IEEE Micro Top Pick of 2023. More infos are in eyecod-toppick.git
 If you find this codebase useful to your research, please cite:
 
 ````
-@inproceedings{you2022eyecod,
-  title={EyeCoD: eye tracking system acceleration via flatcam-based algorithm \& accelerator co-design},
-  author={You, Haoran and Wan, Cheng and Zhao, Yang and Yu, Zhongzhi and Fu, Yonggan and Yuan, Jiayi and Wu, Shang and Zhang, Shunyao and Zhang, Yongan and Li, Chaojian and others},
-  booktitle={Proceedings of the 49th Annual International Symposium on Computer Architecture},
-  pages={610--622},
-  year={2022}
+@inproceedings{you2022vitcod,
+  title={ViTCoD: Vision Transformer Acceleration via Dedicated Algorithm and Accelerator Co-Design},
+  author={You, Haoran and Sun, Zhanyi and Shi, Huihong and Yu, Zhongzhi and Zhao, Yang and Zhang, Yongan and Li, Chaojian and Li, Baopu and Lin, Yingyan},
+  booktitle={The 29th IEEE International Symposium on High-Performance Computer Architecture (HPCA-29)},
+  year={2023}
 }
 ````
