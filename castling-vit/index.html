@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Castling-ViT: Compressing Self-Attention via Switching Towards Linear-Angular Attention During Vision Transformer Inference">
+  <meta name="keywords" content="Efficient Vision Transformer, Linear Attention">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Castling-ViT</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R64M7EE01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-5R64M7EE01');
+  </script>
+
+  <!-- new added start -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- new added end -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- new added start -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+
+    ul.a {
+    list-style-type: circle;
+  }
+  </style>
+
+  <!-- new added end -->
+
+</head>
+<body>
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="http://haoranyou.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://eyecod-toppick.github.io/">
+            EyeCoD (ISCA'22 & TopPick'23)
+          </a>
+          <a class="navbar-item" href="https://www.haoranyou.com/vitcod/">
+            ViTCoD (HPCA'23)
+          </a>
+          <a class="navbar-item" href="https://sites.google.com/view/shiftaddnas">
+            ShiftAddNAS (ICML'22)
+          </a>
+          <a class="navbar-item" href="https://www.haoranyou.com/castling-vit/">
+            Castling-ViT (CVPR'23)
+          </a>
+          <!-- <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-2 publication-title">Castling-ViT: Compressing Self-Attention via Switching Towards Linear-Angular Attention During Vision Transformer Inference</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://haoranyou.com">Haoran You</a><sup>1,2,*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=k5FaRwcAAAAJ&hl=en">Yunyang Xiong</a><sup>2,*</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/xiaoliangdai/">Xiaoliang Dai</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=K3QJPdMAAAAJ&hl=en">Bichen Wu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://research.facebook.com/people/zhang-peizhao/">Peizhao Zhang</a><sup>2</sup>,
+            </span> <br>
+            <span class="author-block">
+              <a href="https://haoqifan.github.io/">Haoqi Fan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/site/vajdap">Peter Vajda</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://eiclab.scs.gatech.edu/pages/team.html">Yingyan Lin</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Georgia Institute of Technology,</span>
+            <span class="author-block"><sup>2</sup>Meta Reality Labs</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2211.10526"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Slide Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/file/d/1NIWiqxac8ufF-nzslpZzEU9ZQ69GLe2b/view?usp=share_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Slide</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/file/d/1b-7r7DutmAnYjOyMLk5uEBFY96XHKMN1/view?usp=share_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/GATECH-EIC/Castling-ViT"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.image-net.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/overall.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+      />
+      <br><br>
+      <h2 class="is-size-4 has-text-centered">
+        Castling-ViT over SOTA baselines on image classification and object detection.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<hr></hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vision Transformers (ViTs) have shown impressive performance but still require a high computation 
+            cost as compared to convolutional neural networks (CNNs), due to the global similarity measurements 
+            and thus a quadratic complexity with the input tokens. 
+            Existing efficient ViTs adopt local attention (e.g., Swin) or linear attention (e.g., Performer), 
+            which sacrifice ViTs' capabilities of capturing either global or local context.
+          </p>
+          <p>
+            In this work, we ask an important research question: 
+            <b><i>Can ViTs learn both global and local context while being more efficient during inference?</i></b>
+            To this end, we propose a framework called <b>Castling-ViT</b>, which trains ViTs using both linear-angular 
+            attention and masked softmax-based quadratic attention, but then switches to having only 
+            linear-angular attention during ViT inference.
+            Our Castling-ViT leverages angular kernels to measure the similarities between queries and keys 
+            via spectral angles. And we further simplify it with two techniques: 
+          </p>
+          <p>
+            <b>(1)</b> a novel linear-angular attention mechanism: we decompose the angular kernels 
+            into linear terms and high-order residuals, and only keep the linear terms; and
+            <b>(2)</b> we adopt two parameterized modules to approximate high-order residuals: a depthwise 
+            convolution and an auxiliary masked softmax attention to help learn both global and local 
+            information, where the masks for softmax attention are regularized to gradually become zeros 
+            and thus incur no overhead during ViT inference.
+          </p>
+          <p>
+            Extensive experiments and ablation studies on three tasks consistently validate the effectiveness 
+            of the proposed Castling-ViT, e.g., achieving up to a 1.8% higher accuracy or 40% MACs reduction 
+            on ImageNet classification and \textbf{1.2} higher mAP on COCO detection under comparable FLOPs, 
+            as compared to ViTs with vanilla softmax-based attentions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XsUSVh34wnA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+
+    <br>
+    <hr></hr>
+    <br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+      </div>
+    </div>
+
+    <p>
+      The below figure illustrates an overview of the proposed Castling-ViT, which makes linear attention
+      more powerful than previous designs while still being efficient during inference. 
+    </p>
+    <br>
+
+    <img src="./static/images/castling-vit.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."
+    />
+
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">ISCA'22</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XsUSVh34wnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-3">VLSI'22</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-bRBCVfF-q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<br>
+  <hr></hr>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{you2023castling,
+  title={Castling-ViT: Compressing Self-Attention via Switching Towards Linear-Angular Attention During Vision Transformer Inference},
+  author={You, Haoran and Xiong, Yunyang and Dai, Xiaoliang and Wu, Bichen and Zhang, Peizhao and Fan, Haoqi and Vajda, Peter and Lin, Yingyan},
+  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2023)},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2211.10526">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ranery" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/ranery/ranery.github.io/tree/master/castling-vit">source code</a> 
+              (adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>) of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
