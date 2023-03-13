@@ -48,6 +48,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <style>
     .dropdown-submenu {
       position: relative;
@@ -103,12 +108,6 @@
           <a class="navbar-item" href="https://www.haoranyou.com/castling-vit/">
             Castling-ViT (CVPR'23)
           </a>
-          <!-- <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a> -->
         </div>
       </div>
     </div>
@@ -320,27 +319,93 @@
           alt="Interpolate start reference image."
     />
 
-    <!-- <div class="columns is-centered has-text-centered">
+    <br>
+    <hr></hr>
+    <br>
+
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Core Implementation</h2>
       </div>
     </div>
 
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-3">ISCA'22</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/XsUSVh34wnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="column">
-        <h2 class="title is-3">VLSI'22</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/-bRBCVfF-q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
+    <pre><code class="python">
+class LinAngularAttention(nn.Module):
+    def __init__(
+        self,
+        in_channels,
+        num_heads=8,
+        qkv_bias=False,
+        attn_drop=0.0,
+        proj_drop=0.0,
+        res_kernel_size=9,
+        sparse_reg=False,
+    ):
+        super().__init__()
+        assert in_channels % num_heads == 0, "dim should be divisible by num_heads"
+        self.num_heads = num_heads
+        head_dim = in_channels // num_heads
+        self.scale = head_dim**-0.5
+        self.sparse_reg = sparse_reg
+
+        self.qkv = nn.Linear(in_channels, in_channels * 3, bias=qkv_bias)
+        self.attn_drop = nn.Dropout(attn_drop)
+        self.proj = nn.Linear(in_channels, in_channels)
+        self.proj_drop = nn.Dropout(proj_drop)
+
+        self.kq_matmul = MatMul()
+        self.kqv_matmul = MatMul()
+        if self.sparse_reg:
+            self.qk_matmul = MatMul()
+            self.sv_matmul = MatMul()
+
+        self.dconv = nn.Conv2d(
+            in_channels=self.num_heads,
+            out_channels=self.num_heads,
+            kernel_size=(res_kernel_size, 1),
+            padding=(res_kernel_size // 2, 0),
+            bias=False,
+            groups=self.num_heads,
+        )
+
+    def forward(self, x):
+        N, L, C = x.shape
+        qkv = (
+            self.qkv(x)
+            .reshape(N, L, 3, self.num_heads, C // self.num_heads)
+            .permute(2, 0, 3, 1, 4)
+        )
+        q, k, v = qkv.unbind(0)  # make torchscript happy (cannot use tensor as tuple)
+
+        if self.sparse_reg:
+            attn = self.qk_matmul(q * self.scale, k.transpose(-2, -1))
+            attn = attn.softmax(dim=-1)
+            mask = attn > 0.02 # note that the threshold could be different; adapt to your codebases.
+            sparse = mask * attn
+
+        q = q / q.norm(dim=-1, keepdim=True)
+        k = k / k.norm(dim=-1, keepdim=True)
+        dconv_v = self.dconv(v)
+
+        attn = self.kq_matmul(k.transpose(-2, -1), v)
+
+        if self.sparse_reg:
+            x = (
+                self.sv_matmul(sparse, v)
+                + 0.5 * v
+                + 1.0 / math.pi * self.kqv_matmul(q, attn)
+            )
+        else:
+            x = 0.5 * v + 1.0 / math.pi * self.kqv_matmul(q, attn)
+        x = x / x.norm(dim=-1, keepdim=True)
+        x += dconv_v
+        x = x.transpose(1, 2).reshape(N, L, C)
+        x = self.proj(x)
+        x = self.proj_drop(x)
+        return x
+    </code></pre>
+
   </div>
 </section>
 
