@@ -3,6 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-03-16T15:11:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/news/coc_award/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/news/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
     <priority>0</priority>
@@ -32,11 +48,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2023-01-31T15:11:28-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/bio/intro/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
   </url>
@@ -44,12 +55,6 @@
   <url>
     <loc>http://localhost:1313/news/toppick/</loc>
     <lastmod>2023-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/news/</loc>
-    <lastmod>2023-01-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

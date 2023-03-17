@@ -6,10 +6,19 @@
     <description>Recent content in News on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/news/coc_award/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/coc_award/</guid>
+      <description>[03/2023] Haoran was selected by GaTech College of Computing Awards Committee to receive the Outstanding Graduate Research Assistant Award !</description>
+    </item>
     
     <item>
       <title></title>
