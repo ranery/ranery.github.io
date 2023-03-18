@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lottery Ticket Hypothesis on Haoran You</title>
-    <link>http://localhost:1313/tags/lottery-ticket-hypothesis/</link>
+    <link>http://localhost:50087/tags/lottery-ticket-hypothesis/</link>
     <description>Recent content in Lottery Ticket Hypothesis on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2020 15:24:07 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/lottery-ticket-hypothesis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:50087/tags/lottery-ticket-hypothesis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lottery Ticket Hypothesis</title>
-      <link>http://localhost:1313/post/lottery-ticket/</link>
+      <link>http://localhost:50087/post/lottery-ticket/</link>
       <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
       
-      <guid>http://localhost:1313/post/lottery-ticket/</guid>
+      <guid>http://localhost:50087/post/lottery-ticket/</guid>
       <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.</description>
     </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>http://localhost:1313/post/early-bird/</link>
+      <link>http://localhost:50087/post/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/early-bird/</guid>
+      <guid>http://localhost:50087/post/early-bird/</guid>
       <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>http://localhost:1313/publication/early-bird/</link>
+      <link>http://localhost:50087/publication/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:1313/publication/early-bird/</guid>
+      <guid>http://localhost:50087/publication/early-bird/</guid>
       <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     

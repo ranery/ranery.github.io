@@ -9,7 +9,7 @@ html,body {
 body {
   font-family: Arial;
   color: #333333;
-  /* text-align: center; */
+  text-align: left;
 }
 
 #chart-container {
