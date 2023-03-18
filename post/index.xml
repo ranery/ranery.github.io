@@ -2,130 +2,130 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Haoran You</title>
-    <link>http://localhost:50269/post/</link>
+    <link>http://localhost:50404/post/</link>
     <description>Recent content in Posts on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Mar 2023 20:40:26 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:50269/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:50404/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hiking at Kennesaw Mountain</title>
-      <link>http://localhost:50269/post/hiking_kennesaw/</link>
+      <link>http://localhost:50404/post/hiking_kennesaw/</link>
       <pubDate>Sat, 11 Mar 2023 20:40:26 -0600</pubDate>
       
-      <guid>http://localhost:50269/post/hiking_kennesaw/</guid>
+      <guid>http://localhost:50404/post/hiking_kennesaw/</guid>
       <description>Recently, we have transferred from Rice University to GaTech. After a relatively long time settlement and exploration, the life went to normal but a different style. My new apartment is 4 miles far from the campus so I have to drive there everyday even without Klaus&amp;rsquo;s parking pass.</description>
     </item>
     
     <item>
       <title>Efficient DNN Training</title>
-      <link>http://localhost:50269/post/efficient-training/</link>
+      <link>http://localhost:50404/post/efficient-training/</link>
       <pubDate>Fri, 02 Oct 2020 22:23:07 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/efficient-training/</guid>
+      <guid>http://localhost:50404/post/efficient-training/</guid>
       <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network.</description>
     </item>
     
     <item>
       <title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </title>
-      <link>http://localhost:50269/post/shiftaddnet/</link>
+      <link>http://localhost:50404/post/shiftaddnet/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0600</pubDate>
       
-      <guid>http://localhost:50269/post/shiftaddnet/</guid>
+      <guid>http://localhost:50404/post/shiftaddnet/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks.</description>
     </item>
     
     <item>
       <title>[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </title>
-      <link>http://localhost:50269/post/fractrain/</link>
+      <link>http://localhost:50404/post/fractrain/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/fractrain/</guid>
+      <guid>http://localhost:50404/post/fractrain/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.</description>
     </item>
     
     <item>
       <title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</title>
-      <link>http://localhost:50269/post/l2o/</link>
+      <link>http://localhost:50404/post/l2o/</link>
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/l2o/</guid>
+      <guid>http://localhost:50404/post/l2o/</guid>
       <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.</description>
     </item>
     
     <item>
       <title>DNN Training Stages Understanding</title>
-      <link>http://localhost:50269/post/dnn-training/</link>
+      <link>http://localhost:50404/post/dnn-training/</link>
       <pubDate>Sat, 21 Mar 2020 22:23:07 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/dnn-training/</guid>
+      <guid>http://localhost:50404/post/dnn-training/</guid>
       <description>Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:</description>
     </item>
     
     <item>
       <title>[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation</title>
-      <link>http://localhost:50269/post/smart-exchange/</link>
+      <link>http://localhost:50404/post/smart-exchange/</link>
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/smart-exchange/</guid>
+      <guid>http://localhost:50404/post/smart-exchange/</guid>
       <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).</description>
     </item>
     
     <item>
       <title>Lottery Ticket Hypothesis</title>
-      <link>http://localhost:50269/post/lottery-ticket/</link>
+      <link>http://localhost:50404/post/lottery-ticket/</link>
       <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
       
-      <guid>http://localhost:50269/post/lottery-ticket/</guid>
+      <guid>http://localhost:50404/post/lottery-ticket/</guid>
       <description>Lottery Ticket Hypothesis  A randomly-initialized, dense neural network contains a subnetwork that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.</description>
     </item>
     
     <item>
       <title>Cultivate Good Research Taste</title>
-      <link>http://localhost:50269/post/research_taste/</link>
+      <link>http://localhost:50404/post/research_taste/</link>
       <pubDate>Thu, 02 Jan 2020 22:01:18 -0600</pubDate>
       
-      <guid>http://localhost:50269/post/research_taste/</guid>
+      <guid>http://localhost:50404/post/research_taste/</guid>
       <description>This post is supposed to be my reflect about cultivating good research taste as an individual researcher, and should always be maintained and reviewed!  
 Updates  01/02/2020 Today I find one paper I have criticized got accepted as an oral presentation, I was dismissive at the first glance since one can easily understand how it suppose to work technically and further regarded it as granted.</description>
     </item>
     
     <item>
       <title>Hermann Park</title>
-      <link>http://localhost:50269/post/hermann_park/</link>
+      <link>http://localhost:50404/post/hermann_park/</link>
       <pubDate>Tue, 24 Dec 2019 20:40:26 -0600</pubDate>
       
-      <guid>http://localhost:50269/post/hermann_park/</guid>
+      <guid>http://localhost:50404/post/hermann_park/</guid>
       <description>Before applying for Ph.D., I heard that Rice University is of highest happiness index. I was believed (mind changes later) that this is the case for undergraduates while not applied to Ph.</description>
     </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>http://localhost:50269/post/early-bird/</link>
+      <link>http://localhost:50404/post/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/early-bird/</guid>
+      <guid>http://localhost:50404/post/early-bird/</guid>
       <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     
     <item>
       <title>[IEEE TNNLS] Bayesian Cycle-Consistent Generative Adversarial Networks via Marginalizing Latent Sampling</title>
-      <link>http://localhost:50269/post/bayesian-cyclegan/</link>
+      <link>http://localhost:50404/post/bayesian-cyclegan/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/post/bayesian-cyclegan/</guid>
+      <guid>http://localhost:50404/post/bayesian-cyclegan/</guid>
       <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://localhost:50269/post/hello-world/</link>
+      <link>http://localhost:50404/post/hello-world/</link>
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:50269/post/hello-world/</guid>
+      <guid>http://localhost:50404/post/hello-world/</guid>
       <description>This is first post!</description>
     </item>
     

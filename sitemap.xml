@@ -3,243 +3,243 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:50269/</loc>
+    <loc>http://localhost:50404/</loc>
     <lastmod>2023-03-16T15:11:28-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/coc_award/</loc>
+    <loc>http://localhost:50404/news/coc_award/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/</loc>
+    <loc>http://localhost:50404/news/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/categories/</loc>
+    <loc>http://localhost:50404/categories/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/hiking_kennesaw/</loc>
+    <loc>http://localhost:50404/post/hiking_kennesaw/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/categories/lifestyle/</loc>
-    <lastmod>2023-03-11T20:40:26-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:50269/post/</loc>
+    <loc>http://localhost:50404/categories/lifestyle/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/bio/</loc>
+    <loc>http://localhost:50404/post/</loc>
+    <lastmod>2023-03-11T20:40:26-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:50404/bio/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/bio/intro/</loc>
+    <loc>http://localhost:50404/bio/intro/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/toppick/</loc>
+    <loc>http://localhost:50404/news/toppick/</loc>
     <lastmod>2023-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/talk_at_ut_austin/</loc>
+    <loc>http://localhost:50404/news/talk_at_ut_austin/</loc>
     <lastmod>2023-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/talk_at_accv/</loc>
+    <loc>http://localhost:50404/news/talk_at_accv/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/i-flatcam/</loc>
+    <loc>http://localhost:50404/news/i-flatcam/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/vitcod/</loc>
+    <loc>http://localhost:50404/news/vitcod/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/news/eb-train/</loc>
+    <loc>http://localhost:50404/news/eb-train/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/dnn-training/</loc>
+    <loc>http://localhost:50404/tags/dnn-training/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/efficient-training/</loc>
+    <loc>http://localhost:50404/post/efficient-training/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/categories/research/</loc>
-    <lastmod>2020-10-02T22:23:07-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:50269/tags/</loc>
+    <loc>http://localhost:50404/categories/research/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/efficient-dnn-training/</loc>
+    <loc>http://localhost:50404/tags/</loc>
+    <lastmod>2020-10-02T22:23:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:50404/tags/efficient-dnn-training/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/</loc>
+    <loc>http://localhost:50404/publication/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/shiftaddnet/</loc>
+    <loc>http://localhost:50404/post/shiftaddnet/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/shiftaddnet/</loc>
+    <loc>http://localhost:50404/publication/shiftaddnet/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/dnn-quantization/</loc>
+    <loc>http://localhost:50404/tags/dnn-quantization/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/fractrain/</loc>
+    <loc>http://localhost:50404/post/fractrain/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/fractrain/</loc>
+    <loc>http://localhost:50404/publication/fractrain/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/learning-to-optimize/</loc>
+    <loc>http://localhost:50404/tags/learning-to-optimize/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/l2o/</loc>
+    <loc>http://localhost:50404/post/l2o/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/l2o/</loc>
+    <loc>http://localhost:50404/publication/l2o/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/dnn-training/</loc>
+    <loc>http://localhost:50404/post/dnn-training/</loc>
     <lastmod>2020-03-21T22:23:07-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/computer-architecture/</loc>
+    <loc>http://localhost:50404/tags/computer-architecture/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/smart-exchange/</loc>
+    <loc>http://localhost:50404/post/smart-exchange/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/smart-exchange/</loc>
+    <loc>http://localhost:50404/publication/smart-exchange/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/lottery-ticket-hypothesis/</loc>
+    <loc>http://localhost:50404/tags/lottery-ticket-hypothesis/</loc>
     <lastmod>2020-01-12T15:24:07-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/lottery-ticket/</loc>
+    <loc>http://localhost:50404/post/lottery-ticket/</loc>
     <lastmod>2020-01-12T15:24:07-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/research_taste/</loc>
+    <loc>http://localhost:50404/post/research_taste/</loc>
     <lastmod>2020-01-02T22:01:18-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/hermann_park/</loc>
+    <loc>http://localhost:50404/post/hermann_park/</loc>
     <lastmod>2019-12-24T20:40:26-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/bayesian-optimization/</loc>
+    <loc>http://localhost:50404/tags/bayesian-optimization/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/tags/generative-networks/</loc>
+    <loc>http://localhost:50404/tags/generative-networks/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/early-bird/</loc>
+    <loc>http://localhost:50404/post/early-bird/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/early-bird/</loc>
+    <loc>http://localhost:50404/publication/early-bird/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/bayesian-cyclegan/</loc>
+    <loc>http://localhost:50404/post/bayesian-cyclegan/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/publication/bayesian-cyclegan/</loc>
+    <loc>http://localhost:50404/publication/bayesian-cyclegan/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/post/hello-world/</loc>
+    <loc>http://localhost:50404/post/hello-world/</loc>
     <lastmod>2019-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:50269/projects/</loc>
+    <loc>http://localhost:50404/projects/</loc>
     <priority>0</priority>
   </url>
   

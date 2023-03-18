@@ -591,7 +591,7 @@
   transform: rotate(135deg);
 }
 
-/* .oci-leader::before {
+.oci-leader::before {
   position: absolute;
   content: "";
   display: inline-block;
@@ -599,9 +599,9 @@
   height: 0.4rem;
   border-radius: 0.2rem;
   background: #000;
-  top: -0.75rem;
+  top: -0.45rem;
   left: 0.1rem;
-} */
+}
 
 /* .oci-leader::after {
   position: absolute;

@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Haoran You</title>
-    <link>http://localhost:50269/tags/</link>
+    <link>http://localhost:50404/tags/</link>
     <description>Recent content in Tags on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Oct 2020 22:23:07 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:50269/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:50404/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DNN Training</title>
-      <link>http://localhost:50269/tags/dnn-training/</link>
+      <link>http://localhost:50404/tags/dnn-training/</link>
       <pubDate>Fri, 02 Oct 2020 22:23:07 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/dnn-training/</guid>
+      <guid>http://localhost:50404/tags/dnn-training/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficient DNN Training</title>
-      <link>http://localhost:50269/tags/efficient-dnn-training/</link>
+      <link>http://localhost:50404/tags/efficient-dnn-training/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0600</pubDate>
       
-      <guid>http://localhost:50269/tags/efficient-dnn-training/</guid>
+      <guid>http://localhost:50404/tags/efficient-dnn-training/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DNN Quantization</title>
-      <link>http://localhost:50269/tags/dnn-quantization/</link>
+      <link>http://localhost:50404/tags/dnn-quantization/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/dnn-quantization/</guid>
+      <guid>http://localhost:50404/tags/dnn-quantization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning to Optimize</title>
-      <link>http://localhost:50269/tags/learning-to-optimize/</link>
+      <link>http://localhost:50404/tags/learning-to-optimize/</link>
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/learning-to-optimize/</guid>
+      <guid>http://localhost:50404/tags/learning-to-optimize/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computer Architecture</title>
-      <link>http://localhost:50269/tags/computer-architecture/</link>
+      <link>http://localhost:50404/tags/computer-architecture/</link>
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/computer-architecture/</guid>
+      <guid>http://localhost:50404/tags/computer-architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lottery Ticket Hypothesis</title>
-      <link>http://localhost:50269/tags/lottery-ticket-hypothesis/</link>
+      <link>http://localhost:50404/tags/lottery-ticket-hypothesis/</link>
       <pubDate>Sun, 12 Jan 2020 15:24:07 -0600</pubDate>
       
-      <guid>http://localhost:50269/tags/lottery-ticket-hypothesis/</guid>
+      <guid>http://localhost:50404/tags/lottery-ticket-hypothesis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Optimization</title>
-      <link>http://localhost:50269/tags/bayesian-optimization/</link>
+      <link>http://localhost:50404/tags/bayesian-optimization/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/bayesian-optimization/</guid>
+      <guid>http://localhost:50404/tags/bayesian-optimization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generative Networks</title>
-      <link>http://localhost:50269/tags/generative-networks/</link>
+      <link>http://localhost:50404/tags/generative-networks/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50269/tags/generative-networks/</guid>
+      <guid>http://localhost:50404/tags/generative-networks/</guid>
       <description></description>
     </item>
     
