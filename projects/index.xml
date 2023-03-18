@@ -34,8 +34,43 @@
 
   gtag('config', 'G-19W0TQGWMW');
 </script>
+
+
+
+
+  <meta charset="utf-8">
+  <title>Haoran's Projects</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/jquery.orgchart.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+    #chart-container { text-align: left; }
+    .orgchart { background: #fff; }
+    .orgchart td.left, .orgchart td.right, .orgchart td.top { border-color: #aaa; }
+    .orgchart td>.down { background-color: #aaa; }
+    .orgchart .haoran .title { background-color: #EB984E; }
+    .orgchart .haoran .content { border-color: #EB984E; }
+    .orgchart .co-design .title { background-color: #009933; }
+    .orgchart .co-design .content { border-color: #009933; }
+    .orgchart .ml .title { background-color: #006699; }
+    .orgchart .ml .content { border-color: #006699; }
+    .orgchart .ml-lth .title { background-color: #993366; }
+    .orgchart .ml-lth .content { border-color: #993366; }
+    .orgchart .ml-shiftadd .title { background-color: #996633; }
+    .orgchart .ml-shiftadd .content { border-color: #996633; }
+    .orgchart .ml-transformer .title { background-color: #cc0066; }
+    .orgchart .ml-transformer .content { border-color: #cc0066; }
+     
+     
+  </style>
+
+
+
 </head>
+
+
 <body class="body">
+  
 	<div class="container container--outer">
 		<header class="header">
 	<div class="container">
@@ -70,34 +105,10 @@
 </header>
 
 
-  <meta charset="utf-8">
-  <title>Haoran's Projects</title>
-  <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/jquery.orgchart.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-    #chart-container { text-align: left; }
-    .orgchart { background: #fff; }
-    .orgchart td.left, .orgchart td.right, .orgchart td.top { border-color: #aaa; }
-    .orgchart td>.down { background-color: #aaa; }
-    .orgchart .haoran .title { background-color: #EB984E; }
-    .orgchart .haoran .content { border-color: #EB984E; }
-    .orgchart .co-design .title { background-color: #009933; }
-    .orgchart .co-design .content { border-color: #009933; }
-    .orgchart .ml .title { background-color: #006699; }
-    .orgchart .ml .content { border-color: #006699; }
-    .orgchart .ml-lth .title { background-color: #993366; }
-    .orgchart .ml-lth .content { border-color: #993366; }
-    .orgchart .ml-shiftadd .title { background-color: #996633; }
-    .orgchart .ml-shiftadd .content { border-color: #996633; }
-    .orgchart .ml-transformer .title { background-color: #cc0066; }
-    .orgchart .ml-transformer .content { border-color: #cc0066; }
-     
-     
-  </style>
-</head>
-<body>
-  
+
+
+
+
 
 <div class="wrapper flex">
   <div class="primary">
@@ -188,7 +199,7 @@
 </div>
 </div>
 
-  </body>
+
 
 
 <footer class="footer">
@@ -205,5 +216,7 @@
 </footer>
 	</div>
 <script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script><script data-no-instant>document.write('<script src="/livereload.js?port=49501&mindelay=10"></' + 'script>')</script></body>
+<script src="/js/custom.js"></script><script data-no-instant>document.write('<script src="/livereload.js?port=49501&mindelay=10"></' + 'script>')</script>
+
+</body>
 </html>

@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DNN Training on Haoran You</title>
-    <link>http://localhost:50087/tags/dnn-training/</link>
+    <link>http://localhost:50269/tags/dnn-training/</link>
     <description>Recent content in DNN Training on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Oct 2020 22:23:07 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:50087/tags/dnn-training/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:50269/tags/dnn-training/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Efficient DNN Training</title>
-      <link>http://localhost:50087/post/efficient-training/</link>
+      <link>http://localhost:50269/post/efficient-training/</link>
       <pubDate>Fri, 02 Oct 2020 22:23:07 -0500</pubDate>
       
-      <guid>http://localhost:50087/post/efficient-training/</guid>
+      <guid>http://localhost:50269/post/efficient-training/</guid>
       <description>Efficient DNN Training Summary Model compression has been extensively studied for light-weight inference, popular means includes network pruning, weight factorization, network quantization, and neural architecture search among many others. On the other hand, the literature on efficient training appears to be much sparser, DNN training still requires us to fully train the over-parameterized neural network.</description>
     </item>
     
     <item>
       <title>DNN Training Stages Understanding</title>
-      <link>http://localhost:50087/post/dnn-training/</link>
+      <link>http://localhost:50269/post/dnn-training/</link>
       <pubDate>Sat, 21 Mar 2020 22:23:07 -0500</pubDate>
       
-      <guid>http://localhost:50087/post/dnn-training/</guid>
+      <guid>http://localhost:50269/post/dnn-training/</guid>
       <description>Recent works show that DNN training undergoes different stages, each stage shows different effects given a hyper-parameter setting and therefore entails detailed explaination. Below I aims to analyze and share the deep understanding of DNN training, especially from the following three perspectives:</description>
     </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>http://localhost:50087/post/early-bird/</link>
+      <link>http://localhost:50269/post/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/post/early-bird/</guid>
+      <guid>http://localhost:50269/post/early-bird/</guid>
       <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     
     <item>
       <title>[ICLR 2020] Drawing Early-Bird Tickets: Towards More Efficient Training of Neural Networks</title>
-      <link>http://localhost:50087/publication/early-bird/</link>
+      <link>http://localhost:50269/publication/early-bird/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/publication/early-bird/</guid>
+      <guid>http://localhost:50269/publication/early-bird/</guid>
       <description>Accepted as spotlight oral paper! Abstract: (Frankle &amp;amp; Carbin, 2019) shows that there exist winning tickets (small but critical subnetworks) for dense, randomly initialized networks, that can be trained alone to achieve comparable accuracies to the latter in a similar number of iterations.</description>
     </item>
     

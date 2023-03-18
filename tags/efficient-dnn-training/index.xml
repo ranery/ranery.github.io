@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Efficient DNN Training on Haoran You</title>
-    <link>http://localhost:50087/tags/efficient-dnn-training/</link>
+    <link>http://localhost:50269/tags/efficient-dnn-training/</link>
     <description>Recent content in Efficient DNN Training on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Sep 2020 18:03:59 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:50087/tags/efficient-dnn-training/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:50269/tags/efficient-dnn-training/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </title>
-      <link>http://localhost:50087/post/shiftaddnet/</link>
+      <link>http://localhost:50269/post/shiftaddnet/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0600</pubDate>
       
-      <guid>http://localhost:50087/post/shiftaddnet/</guid>
+      <guid>http://localhost:50269/post/shiftaddnet/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks.</description>
     </item>
     
     <item>
       <title>[NeurIPS 2020] ShiftAddNet: A Hardware-Inspired Deep Network </title>
-      <link>http://localhost:50087/publication/shiftaddnet/</link>
+      <link>http://localhost:50269/publication/shiftaddnet/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0600</pubDate>
       
-      <guid>http://localhost:50087/publication/shiftaddnet/</guid>
+      <guid>http://localhost:50269/publication/shiftaddnet/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Multiplication (e.g., convolution) is arguably a cornerstone of modern deep neural networks (DNNs). However, intensive multiplications cause expensive resource costs that challenge DNN deployment on resource-constrained edge devices, driving several attempts for multiplication-less deep networks.</description>
     </item>
     
     <item>
       <title>[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </title>
-      <link>http://localhost:50087/post/fractrain/</link>
+      <link>http://localhost:50269/post/fractrain/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/post/fractrain/</guid>
+      <guid>http://localhost:50269/post/fractrain/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.</description>
     </item>
     
     <item>
       <title>[NeurIPS 2020] FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training </title>
-      <link>http://localhost:50087/publication/fractrain/</link>
+      <link>http://localhost:50269/publication/fractrain/</link>
       <pubDate>Tue, 22 Sep 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/publication/fractrain/</guid>
+      <guid>http://localhost:50269/publication/fractrain/</guid>
       <description>Accepted as NeurIPS 2020 regular paper! Abstract: Recent breakthroughs in deep neural networks (DNNs) have fueled a tremendous demand for intelligent edge devices featuring on-site learning, while the practical realization of such systems remains a challenge due to the limited resources available at the edge and the required massive training costs for state-of-the-art (SOTA) DNNs.</description>
     </item>
     
     <item>
       <title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</title>
-      <link>http://localhost:50087/post/l2o/</link>
+      <link>http://localhost:50269/post/l2o/</link>
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/post/l2o/</guid>
+      <guid>http://localhost:50269/post/l2o/</guid>
       <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.</description>
     </item>
     
     <item>
       <title>[ECCV 2020] HALO: Hardware-Aware Learning to Optimize</title>
-      <link>http://localhost:50087/publication/l2o/</link>
+      <link>http://localhost:50269/publication/l2o/</link>
       <pubDate>Sat, 02 May 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:50087/publication/l2o/</guid>
+      <guid>http://localhost:50269/publication/l2o/</guid>
       <description>Accepted as ECCV 2020 regular paper! Abstract: There has been an explosive demand for bringing machine learning (ML) powered intelligence into numerous Internet-of-Things (IoT) devices. However, the effectiveness of such intelligent functionality requires in-situ continuous model adaptation for adapting to new data and environments, while the on-device computing and energy resources are usually extremely constrained.</description>
     </item>
     
