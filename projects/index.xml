@@ -59,7 +59,7 @@
                 { 'name': '<a href="https://eyecod-toppick.github.io/">EyeCoD</a>', 'title': 'ISCA 2022 & TopPick 2023', 'className': 'co-design', },
                 { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'co-design', },
                 { 'name': '<a href="https://arxiv.org/abs/2112.11594">GCoD</a>', 'title': 'HPCA 2022', 'className': 'co-design', },
-                { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022', 'className': 'co-design', },
+                { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022 & TCAS-I', 'className': 'co-design', },
             ]
         },
          
@@ -77,11 +77,11 @@
                 'children': [
                     { 'name': '<a href="https://arxiv.org/abs/2010.12785">ShiftAddNet</a>', 'title': 'NeurIPS 2020', 'className': 'ml-shiftadd', },
                     { 'name': '<a href="https://sites.google.com/view/shiftaddnas">ShiftAddNAS</a>', 'title': 'ICML 2022', 'className': 'ml-shiftadd', },
-                    { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022', 'className': 'ml-shiftadd', },
-                    { 'name': 'NASA+', 'title': 'TCAS-I', 'className': 'ml-shiftadd', },
+                    { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022 & TCAS-I', 'className': 'ml-shiftadd', },
+                    
                 ]
             },
-            { 'name': 'Transformer', 'title': 'Efficient ViT & LLMs', 'className': 'ml-transformer',
+            { 'name': 'Transformer', 'title': 'Efficient ViTs & LLMs', 'className': 'ml-transformer',
                 'children': [
                     { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'ml-transformer', },
                     { 'name': '<a href="https://www.haoranyou.com/castling-vit/">Castling-ViT</a>', 'title': 'CVPR 2023', 'className': 'ml-transformer', },
