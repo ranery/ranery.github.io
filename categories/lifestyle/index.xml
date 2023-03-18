@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lifestyle on Haoran You</title>
-    <link>http://localhost:64728/categories/lifestyle/</link>
+    <link>http://localhost:65470/categories/lifestyle/</link>
     <description>Recent content in Lifestyle on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Mar 2023 20:40:26 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:64728/categories/lifestyle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:65470/categories/lifestyle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hiking at Kennesaw Mountain</title>
-      <link>http://localhost:64728/post/hiking_kennesaw/</link>
+      <link>http://localhost:65470/post/hiking_kennesaw/</link>
       <pubDate>Sat, 11 Mar 2023 20:40:26 -0600</pubDate>
       
-      <guid>http://localhost:64728/post/hiking_kennesaw/</guid>
+      <guid>http://localhost:65470/post/hiking_kennesaw/</guid>
       <description>Recently, we have transferred from Rice University to GaTech. After a relatively long time settlement and exploration, the life went to normal but a different style. My new apartment is 4 miles far from the campus so I have to drive there everyday even without Klaus&amp;rsquo;s parking pass.</description>
     </item>
     
     <item>
       <title>Hermann Park</title>
-      <link>http://localhost:64728/post/hermann_park/</link>
+      <link>http://localhost:65470/post/hermann_park/</link>
       <pubDate>Tue, 24 Dec 2019 20:40:26 -0600</pubDate>
       
-      <guid>http://localhost:64728/post/hermann_park/</guid>
+      <guid>http://localhost:65470/post/hermann_park/</guid>
       <description>Before applying for Ph.D., I heard that Rice University is of highest happiness index. I was believed (mind changes later) that this is the case for undergraduates while not applied to Ph.</description>
     </item>
     

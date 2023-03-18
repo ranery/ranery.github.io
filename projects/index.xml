@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Haoran's Projects</title>
-  <link rel="icon" href="img/logo.png">
+  <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/jquery.orgchart.css">
   <link rel="stylesheet" href="css/style.css">
   <style type="text/css">
@@ -32,7 +32,7 @@
 
   <p>
     Note: Use your mouse scroll up and down to zoom in or out. You can also touch the chart to move, click node edges to collapse or expand.
-    Leaf nodes contain <a href="http://www.haoranyou.com/projects">clickable links</a>, check out the corresponding project website or paper !
+    Leaf nodes contain <a href="http://www.haoranyou.com/projects" style="color: #0f21e4;">clickable links</a>, check out the corresponding project website or paper !
   </p>
 
   <div id="chart-container"></div>

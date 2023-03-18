@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Architecture on Haoran You</title>
-    <link>http://localhost:64728/tags/computer-architecture/</link>
+    <link>http://localhost:65470/tags/computer-architecture/</link>
     <description>Recent content in Computer Architecture on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2020 18:03:59 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:64728/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:65470/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation</title>
-      <link>http://localhost:64728/post/smart-exchange/</link>
+      <link>http://localhost:65470/post/smart-exchange/</link>
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:64728/post/smart-exchange/</guid>
+      <guid>http://localhost:65470/post/smart-exchange/</guid>
       <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).</description>
     </item>
     
     <item>
       <title>[ISCA 2020] SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation</title>
-      <link>http://localhost:64728/publication/smart-exchange/</link>
+      <link>http://localhost:65470/publication/smart-exchange/</link>
       <pubDate>Sun, 02 Feb 2020 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:64728/publication/smart-exchange/</guid>
+      <guid>http://localhost:65470/publication/smart-exchange/</guid>
       <description>Accepted as ISCA 2020 regular paper! Abstract: We present SmartExchange, an algorithm-hardware co-design framework to trade higher-cost memory storage/access for lower-cost computation, for energy-efficient inference of deep neural networks (DNNs).</description>
     </item>
     
