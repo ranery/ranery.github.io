@@ -9,13 +9,14 @@ html,body {
 body {
   font-family: Arial;
   color: #333333;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #chart-container {
   position: relative;
   /* height: 420px; */
-  height: 750px;
+  /* height: 750px; */
+  height: 950px;
   /* left: 550px;
   width: 1000px; */
   border: 1px solid #aaa;

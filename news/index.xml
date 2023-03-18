@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Haoran You</title>
-    <link>http://localhost:49501/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:49501/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/coc_award/</link>
+      <link>http://localhost:1313/news/coc_award/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/coc_award/</guid>
+      <guid>http://localhost:1313/news/coc_award/</guid>
       <description>[03/2023] Haoran was selected by GaTech College of Computing Awards Committee to receive the Outstanding Graduate Research Assistant Award !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/toppick/</link>
+      <link>http://localhost:1313/news/toppick/</link>
       <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/toppick/</guid>
+      <guid>http://localhost:1313/news/toppick/</guid>
       <description>[01/2023] Our EyeCoD (ISCA&amp;rsquo;22) was selected for being the IEEE Micro&amp;rsquo;s Top Pick of 2023 !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/talk_at_ut_austin/</link>
+      <link>http://localhost:1313/news/talk_at_ut_austin/</link>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/talk_at_ut_austin/</guid>
+      <guid>http://localhost:1313/news/talk_at_ut_austin/</guid>
       <description>[01/2023] Haoran gave an invited talk at UT-Austin Energy-Aware Computing Group !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/talk_at_accv/</link>
+      <link>http://localhost:1313/news/talk_at_accv/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/talk_at_accv/</guid>
+      <guid>http://localhost:1313/news/talk_at_accv/</guid>
       <description>[12/2022] Haoran gave an invited talk at ACCV&amp;rsquo;22 Recent Advances in Efficient Deep Learning for Computer Vision Turorial !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/i-flatcam/</link>
+      <link>http://localhost:1313/news/i-flatcam/</link>
       <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/i-flatcam/</guid>
+      <guid>http://localhost:1313/news/i-flatcam/</guid>
       <description>[11/2022] Our i-FlatCam (VLSI&amp;rsquo;22) won the first place in University Best Demonstration at DAC&amp;rsquo;22 !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/vitcod/</link>
+      <link>http://localhost:1313/news/vitcod/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/vitcod/</guid>
+      <guid>http://localhost:1313/news/vitcod/</guid>
       <description>[09/2022] Our ViTCoD (HPCA&amp;rsquo;23) was selected for Meta Faculty Research Award of 2022 !</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:49501/news/eb-train/</link>
+      <link>http://localhost:1313/news/eb-train/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49501/news/eb-train/</guid>
+      <guid>http://localhost:1313/news/eb-train/</guid>
       <description>[12/2020] Our Early-Bird Tickets was accepted as Spotlight at ICLR&amp;rsquo;20 !</description>
     </item>
     
