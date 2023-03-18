@@ -1,0 +1,38 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: #333333;
+  text-align: center;
+}
+
+#chart-container {
+  position: relative;
+  /* height: 420px; */
+  height: 750px;
+  /* left: 550px;
+  width: 1000px; */
+  border: 1px solid #aaa;
+  /* margin: 1rem; */
+  overflow: auto;
+  text-align: center;
+}
+
+/* Newly added */
+a:link {color: #ffff;} /* 未访问链接*/
+
+a:visited {color:#ffff;} /* 已访问链接 */
+
+a:hover {color:#0f21e4;} /* 鼠标移动到链接上 */
+
+a:active {color:#0f21e4;} /* 鼠标点击时 */
+
+a{
+  text-decoration: none;
+}

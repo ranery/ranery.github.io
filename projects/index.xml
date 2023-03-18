@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Haoran's Projects</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/jquery.orgchart.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+    #chart-container { text-align: left; }
+    .orgchart { background: #fff; }
+    .orgchart td.left, .orgchart td.right, .orgchart td.top { border-color: #aaa; }
+    .orgchart td>.down { background-color: #aaa; }
+    .orgchart .haoran .title { background-color: #EB984E; }
+    .orgchart .haoran .content { border-color: #EB984E; }
+    .orgchart .co-design .title { background-color: #009933; }
+    .orgchart .co-design .content { border-color: #009933; }
+    .orgchart .ml .title { background-color: #006699; }
+    .orgchart .ml .content { border-color: #006699; }
+    .orgchart .ml-lth .title { background-color: #993366; }
+    .orgchart .ml-lth .content { border-color: #993366; }
+    .orgchart .ml-shiftadd .title { background-color: #996633; }
+    .orgchart .ml-shiftadd .content { border-color: #996633; }
+    .orgchart .ml-transformer .title { background-color: #cc0066; }
+    .orgchart .ml-transformer .content { border-color: #cc0066; }
+     
+     
+  </style>
+</head>
+<body>
+  <h1>Haoran's Project Overview</h1>
+
+  <p>
+    Note: Use your mouse scroll up and down to zoom in or out. You can also touch the chart to move, click node edges to collapse or expand.
+    Leaf nodes contain <a href="http://www.haoranyou.com/projects">clickable links</a>, check out the corresponding project website or paper !
+  </p>
+
+  <div id="chart-container"></div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.orgchart.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
+  <script type="text/javascript" src="js/html2canvas.min.js"></script>
+  <script type="text/javascript" src="js/jspdf.umd.min.js"></script>
+  <script type="text/javascript" src="js/jquery.orgchart.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+
+    var datascource = {
+      'name': 'Haoran You',
+      'title': 'Project Manager',
+      'className': 'haoran',
+      'children': [
+         
+        { 'name': 'Co-Design', 'title': 'Algorithm & Hardware', 'className': 'co-design',
+            'children': [
+                { 'name': '<a href="https://eyecod-toppick.github.io/">EyeCoD</a>', 'title': 'ISCA 2022 & TopPick 2023', 'className': 'co-design', },
+                { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'co-design', },
+                { 'name': '<a href="https://arxiv.org/abs/2112.11594">GCoD</a>', 'title': 'HPCA 2022', 'className': 'co-design', },
+                { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022', 'className': 'co-design', },
+            ]
+        },
+         
+        { 'name': 'Efficient ML', 'title': 'Machine Learning Algorithm', 'className': 'ml',
+          'children': [
+            { 'name': 'Practical LTH', 'title': 'Efficient Training&Inference', 'className': 'ml-lth', 
+                'children': [
+                    { 'name': '<a href="https://arxiv.org/abs/1909.11957">Early-Bird Tickets</a>', 'title': 'ICLR 2020 Spotlight', 'className': 'ml-lth', },
+                    { 'name': '<a href="https://www.aaai.org/AAAI22Papers/AAAI-6732.YouH.pdf">Early-Bird GCN</a>', 'title': 'AAAI 2022', 'className': 'ml-lth', },
+                    { 'name': '<a href="https://arxiv.org/abs/2207.03677">SuperTickets</a>', 'title': 'ECCV 2022', 'className': 'ml-lth', },
+                    { 'name': '<a href="https://arxiv.org/abs/2101.02338">Spline EB Tickets</a>', 'title': 'TMLR 2022', 'className': 'ml-lth', },
+                ]
+            },
+            { 'name': 'Shift & Add NNs', 'title': 'Multiplication-less Primitives', 'className': 'ml-shiftadd',
+                'children': [
+                    { 'name': '<a href="https://arxiv.org/abs/2010.12785">ShiftAddNet</a>', 'title': 'NeurIPS 2020', 'className': 'ml-shiftadd', },
+                    { 'name': '<a href="https://sites.google.com/view/shiftaddnas">ShiftAddNAS</a>', 'title': 'ICML 2022', 'className': 'ml-shiftadd', },
+                    { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022', 'className': 'ml-shiftadd', },
+                    { 'name': 'NASA+', 'title': 'TCAS-I', 'className': 'ml-shiftadd', },
+                ]
+            },
+            { 'name': 'Transformer', 'title': 'Efficient ViT & LLMs', 'className': 'ml-transformer',
+                'children': [
+                    { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'ml-transformer', },
+                    { 'name': '<a href="https://www.haoranyou.com/castling-vit/">Castling-ViT</a>', 'title': 'CVPR 2023', 'className': 'ml-transformer', },
+                ]
+            }
+          ]
+        },
+      ]
+    };
+
+    $('#chart-container').orgchart({
+      'data' : datascource,
+      'nodeContent': 'title',
+      'direction': 'l2r',
+      'pan': true,
+      'zoom': true,
+    
+    
+    });
+
+    oc.$chartContainer.on('touchmove', function(event) {
+      event.preventDefault();
+    });
+
+  });
+  </script>
+
+
+  </body>
+</html>
