@@ -35,7 +35,7 @@
       'direction': 't2b',
       'pan': false,
       'zoom': false,
-      'zoominLimit': 7,
+      'zoominLimit': 1.6,
       // 'zoomoutLimit': 0.5
       'zoomoutLimit': 0.75
     };
