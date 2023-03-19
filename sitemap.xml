@@ -3,243 +3,243 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:52834/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-03-16T15:11:28-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/coc_award/</loc>
+    <loc>http://localhost:1313/news/coc_award/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/</loc>
+    <loc>http://localhost:1313/news/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/hiking_kennesaw/</loc>
+    <loc>http://localhost:1313/post/hiking_kennesaw/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/categories/lifestyle/</loc>
-    <lastmod>2023-03-11T20:40:26-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:52834/post/</loc>
+    <loc>http://localhost:1313/categories/lifestyle/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/bio/</loc>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2023-03-11T20:40:26-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/bio/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/bio/intro/</loc>
+    <loc>http://localhost:1313/bio/intro/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/toppick/</loc>
+    <loc>http://localhost:1313/news/toppick/</loc>
     <lastmod>2023-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/talk_at_ut_austin/</loc>
+    <loc>http://localhost:1313/news/talk_at_ut_austin/</loc>
     <lastmod>2023-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/talk_at_accv/</loc>
+    <loc>http://localhost:1313/news/talk_at_accv/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/i-flatcam/</loc>
+    <loc>http://localhost:1313/news/i-flatcam/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/vitcod/</loc>
+    <loc>http://localhost:1313/news/vitcod/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/news/eb-train/</loc>
+    <loc>http://localhost:1313/news/eb-train/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/dnn-training/</loc>
+    <loc>http://localhost:1313/tags/dnn-training/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/efficient-training/</loc>
+    <loc>http://localhost:1313/post/efficient-training/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/categories/research/</loc>
-    <lastmod>2020-10-02T22:23:07-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:52834/tags/</loc>
+    <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/efficient-dnn-training/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-10-02T22:23:07-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/efficient-dnn-training/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/shiftaddnet/</loc>
+    <loc>http://localhost:1313/post/shiftaddnet/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/shiftaddnet/</loc>
+    <loc>http://localhost:1313/publication/shiftaddnet/</loc>
     <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/dnn-quantization/</loc>
+    <loc>http://localhost:1313/tags/dnn-quantization/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/fractrain/</loc>
+    <loc>http://localhost:1313/post/fractrain/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/fractrain/</loc>
+    <loc>http://localhost:1313/publication/fractrain/</loc>
     <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/learning-to-optimize/</loc>
+    <loc>http://localhost:1313/tags/learning-to-optimize/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/l2o/</loc>
+    <loc>http://localhost:1313/post/l2o/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/l2o/</loc>
+    <loc>http://localhost:1313/publication/l2o/</loc>
     <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/dnn-training/</loc>
+    <loc>http://localhost:1313/post/dnn-training/</loc>
     <lastmod>2020-03-21T22:23:07-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/computer-architecture/</loc>
+    <loc>http://localhost:1313/tags/computer-architecture/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/smart-exchange/</loc>
+    <loc>http://localhost:1313/post/smart-exchange/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/smart-exchange/</loc>
+    <loc>http://localhost:1313/publication/smart-exchange/</loc>
     <lastmod>2020-02-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/lottery-ticket-hypothesis/</loc>
+    <loc>http://localhost:1313/tags/lottery-ticket-hypothesis/</loc>
     <lastmod>2020-01-12T15:24:07-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/lottery-ticket/</loc>
+    <loc>http://localhost:1313/post/lottery-ticket/</loc>
     <lastmod>2020-01-12T15:24:07-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/research_taste/</loc>
+    <loc>http://localhost:1313/post/research_taste/</loc>
     <lastmod>2020-01-02T22:01:18-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/hermann_park/</loc>
+    <loc>http://localhost:1313/post/hermann_park/</loc>
     <lastmod>2019-12-24T20:40:26-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/bayesian-optimization/</loc>
+    <loc>http://localhost:1313/tags/bayesian-optimization/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/tags/generative-networks/</loc>
+    <loc>http://localhost:1313/tags/generative-networks/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/early-bird/</loc>
+    <loc>http://localhost:1313/post/early-bird/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/early-bird/</loc>
+    <loc>http://localhost:1313/publication/early-bird/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/bayesian-cyclegan/</loc>
+    <loc>http://localhost:1313/post/bayesian-cyclegan/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/publication/bayesian-cyclegan/</loc>
+    <loc>http://localhost:1313/publication/bayesian-cyclegan/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/post/hello-world/</loc>
+    <loc>http://localhost:1313/post/hello-world/</loc>
     <lastmod>2019-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:52834/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <priority>0</priority>
   </url>
   

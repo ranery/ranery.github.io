@@ -70,7 +70,7 @@
 
 
 <body class="body">
-  
+
 	<div class="container container--outer">
 		<header class="header">
 	<div class="container">
@@ -155,7 +155,7 @@
                     { 'name': '<a href="https://arxiv.org/abs/1909.11957">Early-Bird Tickets</a>', 'title': 'ICLR 2020 Spotlight', 'className': 'ml-lth', },
                     { 'name': '<a href="https://www.aaai.org/AAAI22Papers/AAAI-6732.YouH.pdf">Early-Bird GCN</a>', 'title': 'AAAI 2022', 'className': 'ml-lth', },
                     { 'name': '<a href="https://arxiv.org/abs/2207.03677">SuperTickets</a>', 'title': 'ECCV 2022', 'className': 'ml-lth', },
-                    { 'name': '<a href="https://arxiv.org/abs/2101.02338">Spline EB Tickets</a>', 'title': 'TMLR 2022', 'className': 'ml-lth', },
+                    { 'name': '<a href="https://www.haoranyou.com/spline-eb/">Spline EB Tickets</a>', 'title': 'TMLR 2022', 'className': 'ml-lth', },
                 ]
             },
             { 'name': 'Shift & Add NNs', 'title': 'Multiplication-less Primitives', 'className': 'ml-shiftadd',
