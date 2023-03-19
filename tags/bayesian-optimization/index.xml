@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian Optimization on Haoran You</title>
-    <link>http://localhost:1313/tags/bayesian-optimization/</link>
+    <link>http://localhost:52834/tags/bayesian-optimization/</link>
     <description>Recent content in Bayesian Optimization on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Oct 2019 18:03:59 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/bayesian-optimization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:52834/tags/bayesian-optimization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[IEEE TNNLS] Bayesian Cycle-Consistent Generative Adversarial Networks via Marginalizing Latent Sampling</title>
-      <link>http://localhost:1313/post/bayesian-cyclegan/</link>
+      <link>http://localhost:52834/post/bayesian-cyclegan/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/bayesian-cyclegan/</guid>
+      <guid>http://localhost:52834/post/bayesian-cyclegan/</guid>
       <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
     </item>
     
     <item>
       <title>[IEEE TNNLS] Bayesian Cycle-Consistent Generative Adversarial Networks via Marginalizing Latent Sampling</title>
-      <link>http://localhost:1313/publication/bayesian-cyclegan/</link>
+      <link>http://localhost:52834/publication/bayesian-cyclegan/</link>
       <pubDate>Wed, 02 Oct 2019 18:03:59 -0500</pubDate>
       
-      <guid>http://localhost:1313/publication/bayesian-cyclegan/</guid>
+      <guid>http://localhost:52834/publication/bayesian-cyclegan/</guid>
       <description>Accepted as IEEE TNNLS regular paper! Abstract: Recent techniques built on generative adversarial networks (GANs), such as cycle-consistent GANs, are able to learn mappings among different domains built from unpaired data sets, through min-max optimization games between generators and discriminators.</description>
     </item>
     

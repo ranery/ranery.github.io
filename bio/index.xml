@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bios on Haoran You</title>
-    <link>http://localhost:1313/bio/</link>
+    <link>http://localhost:52834/bio/</link>
     <description>Recent content in Bios on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jan 2023 15:11:28 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/bio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:52834/bio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Haoran You</title>
-      <link>http://localhost:1313/bio/intro/</link>
+      <link>http://localhost:52834/bio/intro/</link>
       <pubDate>Tue, 31 Jan 2023 15:11:28 -0600</pubDate>
       
-      <guid>http://localhost:1313/bio/intro/</guid>
+      <guid>http://localhost:52834/bio/intro/</guid>
       <description>Hi all, welcome to my personal website. I am a 4th year PhD student in the CS department of Georgia Institute of Technology, who is passinoate about efficient/automated ML and algorithm-hardware co-design!</description>
     </item>
     
