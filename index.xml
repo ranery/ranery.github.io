@@ -13,6 +13,15 @@
     
     <item>
       <title></title>
+      <link>http://localhost:1313/news/best_poster/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/best_poster/</guid>
+      <description>[04/2023] Haoran wons the Best Poster Award at the SCS Poster Competition of GaTech !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost:1313/news/coc_award/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
