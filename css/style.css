@@ -44,12 +44,15 @@ html {
 body {
 	margin: 0;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	font-size: .875rem;
+	font-size: 18px;
+	/* font-size: .875rem; */
 	line-height: 1.6;
 	word-wrap: break-word;
 	/* background: #f7f7f7; */
-	background-image: url("../img/GT_skyline_sr.jpg");
+	background-image: url("../img/GT.jpeg");
+	/* background-repeat: no-repeat; */
+ 	background-size: cover;
+	background-position: 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -57,7 +60,7 @@ body {
 	position: relative;
 	width: 100%;
 	/* max-width: 1080px; */
-	max-width: 1250px;
+	max-width: 1330px;
 	margin: 0 auto;
 }
 

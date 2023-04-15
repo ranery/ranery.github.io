@@ -35,9 +35,9 @@
       'direction': 't2b',
       'pan': false,
       'zoom': false,
-      'zoominLimit': 1.6,
+      'zoominLimit': 2,
       // 'zoomoutLimit': 0.5
-      'zoomoutLimit': 0.75
+      'zoomoutLimit': 1.
     };
   };
   //
@@ -280,7 +280,7 @@
     zoomWheelHandler: function (e) {
       var oc = e.data.oc;
       e.preventDefault();
-      var newScale  = 1 + (e.originalEvent.deltaY > 0 ? -0.2 : 0.2);
+      var newScale  = 1. + (e.originalEvent.deltaY > 0 ? -0.1 : 0.1);
       oc.setChartScale(oc.$chart, newScale);
     },
     //
@@ -334,7 +334,7 @@
       var opts = $chart.data('options');
       var lastTf = $chart.css('transform');
       var matrix = '';
-      var targetScale = 1;
+      var targetScale = 1.;
       if (lastTf === 'none') {
         $chart.css('transform', 'scale(' + newScale + ',' + newScale + ')');
       } else {
