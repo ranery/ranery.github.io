@@ -10,7 +10,6 @@
   <url>
     <loc>http://localhost:1313/news/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -26,7 +25,6 @@
   <url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -37,19 +35,16 @@
   <url>
     <loc>http://localhost:1313/categories/lifestyle/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2023-03-11T20:40:26-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/bio/</loc>
     <lastmod>2023-01-31T15:11:28-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -90,7 +85,6 @@
   <url>
     <loc>http://localhost:1313/tags/dnn-training/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -101,25 +95,11 @@
   <url>
     <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2020-10-02T22:23:07-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/efficient-dnn-training/</loc>
-    <lastmod>2020-09-22T18:03:59-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/publication/</loc>
-    <lastmod>2020-09-22T18:03:59-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -133,9 +113,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/dnn-quantization/</loc>
-    <lastmod>2020-09-22T18:03:59-05:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/efficient-dnn-training/</loc>
+    <lastmod>2020-09-22T18:03:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/publication/</loc>
+    <lastmod>2020-09-22T18:03:59-06:00</lastmod>
   </url>
   
   <url>
@@ -149,9 +133,8 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/learning-to-optimize/</loc>
-    <lastmod>2020-05-02T18:03:59-05:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/dnn-quantization/</loc>
+    <lastmod>2020-09-22T18:03:59-05:00</lastmod>
   </url>
   
   <url>
@@ -165,14 +148,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/dnn-training/</loc>
-    <lastmod>2020-03-21T22:23:07-05:00</lastmod>
+    <loc>http://localhost:1313/tags/learning-to-optimize/</loc>
+    <lastmod>2020-05-02T18:03:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/computer-architecture/</loc>
-    <lastmod>2020-02-02T18:03:59-05:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/post/dnn-training/</loc>
+    <lastmod>2020-03-21T22:23:07-05:00</lastmod>
   </url>
   
   <url>
@@ -186,9 +168,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/tags/computer-architecture/</loc>
+    <lastmod>2020-02-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/tags/lottery-ticket-hypothesis/</loc>
     <lastmod>2020-01-12T15:24:07-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -204,18 +190,6 @@
   <url>
     <loc>http://localhost:1313/post/hermann_park/</loc>
     <lastmod>2019-12-24T20:40:26-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/bayesian-optimization/</loc>
-    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/generative-networks/</loc>
-    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -235,6 +209,16 @@
   
   <url>
     <loc>http://localhost:1313/publication/bayesian-cyclegan/</loc>
+    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/bayesian-optimization/</loc>
+    <lastmod>2019-10-02T18:03:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/generative-networks/</loc>
     <lastmod>2019-10-02T18:03:59-05:00</lastmod>
   </url>
   
