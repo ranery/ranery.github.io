@@ -50,16 +50,19 @@
     .orgchart td>.down { background-color: #aaa; }
     .orgchart .haoran .title { background-color: #EB984E; }
     .orgchart .haoran .content { border-color: #EB984E; }
+    .orgchart .edge .title { background-color: #dc530e; }
+    .orgchart .edge .content { border-color: #dc530e; }
     .orgchart .co-design .title { background-color: #009933; }
     .orgchart .co-design .content { border-color: #009933; }
-    .orgchart .ml .title { background-color: #006699; }
-    .orgchart .ml .content { border-color: #006699; }
+     
+    .orgchart .cloud .title { background-color: #006699; }
+    .orgchart .cloud .content { border-color: #006699; }
     .orgchart .ml-lth .title { background-color: #993366; }
     .orgchart .ml-lth .content { border-color: #993366; }
     .orgchart .ml-shiftadd .title { background-color: #996633; }
     .orgchart .ml-shiftadd .content { border-color: #996633; }
-    .orgchart .ml-transformer .title { background-color: #cc0066; }
-    .orgchart .ml-transformer .content { border-color: #cc0066; }
+    .orgchart .ml-transformer .title { background-color: #009933; }
+    .orgchart .ml-transformer .content { border-color: #009933; }
      
      
   </style>
@@ -133,23 +136,89 @@
   <script type="text/javascript">
     $(function() {
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
     var datascource = {
       'name': 'Haoran You',
       'title': 'Project Manager',
       'className': 'haoran',
       'children': [
          
-        { 'name': 'Co-Design', 'title': 'Algorithm & Hardware', 'className': 'co-design',
-            'children': [
-                { 'name': '<a href="https://eyecod-toppick.github.io/">EyeCoD</a>', 'title': 'ISCA 2022 & TopPick 2023', 'className': 'co-design', },
-                { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'co-design', },
-                { 'name': '<a href="https://arxiv.org/abs/2112.11594">GCoD</a>', 'title': 'HPCA 2022', 'className': 'co-design', },
-                { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022 & TCAS-I', 'className': 'co-design', },
-            ]
+        { 'name': 'Edge Computing', 'title': 'Efficient ML on Edges', 'className': 'edge',
+          'children': [
+            { 'name': 'Shift & Add NNs', 'title': 'Multiplication-less Primitives', 'className': 'ml-shiftadd',
+                'children': [
+                    { 'name': '<a href="https://arxiv.org/abs/2010.12785">ShiftAddNet</a>', 'title': 'NeurIPS 2020', 'className': 'ml-shiftadd', },
+                    { 'name': '<a href="https://sites.google.com/view/shiftaddnas">ShiftAddNAS</a>', 'title': 'ICML 2022', 'className': 'ml-shiftadd', },
+                    { 'name': '<a href="https://arxiv.org/abs/2306.06446">ShiftAddViT</a>', 'title': 'arXiv 2023', 'className': 'ml-shiftadd', },
+                    
+                    
+                ]
+            },
+            { 'name': 'Co-Design', 'title': 'Algorithm & Hardware', 'className': 'co-design', 
+                'children': [
+                  { 'name': '<a href="https://eyecod-toppick.github.io/">EyeCoD</a>', 'title': 'ISCA 2022 & TopPick 2023', 'className': 'co-design', },
+                  { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'co-design', },
+                  { 'name': '<a href="https://arxiv.org/abs/2112.11594">GCoD</a>', 'title': 'HPCA 2022', 'className': 'co-design', },
+                  { 'name': '<a href="">UniEye</a>', 'title': 'Upcoming', 'className': 'co-design', },
+                  
+                ]
+            },
+          ],
         },
          
-        { 'name': 'Efficient ML', 'title': 'Machine Learning Algorithm', 'className': 'ml',
+        { 'name': 'Cloud Computing', 'title': 'Efficient ML on Clouds', 'className': 'cloud',
           'children': [
+            { 'name': 'Transformer', 'title': 'Efficient ViTs & LLMs', 'className': 'ml-transformer',
+                'children': [
+                    
+                    { 'name': '<a href="https://www.haoranyou.com/castling-vit/">Castling-ViT</a>', 'title': 'CVPR 2023', 'className': 'ml-transformer', },
+                    { 'name': '<a href="">EfficientLLM</a>', 'title': 'Upcoming', 'className': 'ml-transformer', },
+                    { 'name': '<a href="">ViTCoD4Rec</a>', 'title': 'Upcoming', 'className': 'ml-transformer', },
+                ]
+            },
             { 'name': 'Practical LTH', 'title': 'Efficient Training&Inference', 'className': 'ml-lth', 
                 'children': [
                     { 'name': '<a href="https://arxiv.org/abs/1909.11957">Early-Bird Tickets</a>', 'title': 'ICLR 2020 Spotlight', 'className': 'ml-lth', },
@@ -158,24 +227,11 @@
                     { 'name': '<a href="https://www.haoranyou.com/spline-eb/">Spline EB Tickets</a>', 'title': 'TMLR 2022', 'className': 'ml-lth', },
                 ]
             },
-            { 'name': 'Shift & Add NNs', 'title': 'Multiplication-less Primitives', 'className': 'ml-shiftadd',
-                'children': [
-                    { 'name': '<a href="https://arxiv.org/abs/2010.12785">ShiftAddNet</a>', 'title': 'NeurIPS 2020', 'className': 'ml-shiftadd', },
-                    { 'name': '<a href="https://sites.google.com/view/shiftaddnas">ShiftAddNAS</a>', 'title': 'ICML 2022', 'className': 'ml-shiftadd', },
-                    { 'name': '<a href="https://arxiv.org/abs/2210.13361">NASA</a>', 'title': 'ICCAD 2022 & TCAS-I', 'className': 'ml-shiftadd', },
-                    
-                ]
-            },
-            { 'name': 'Transformer', 'title': 'Efficient ViTs & LLMs', 'className': 'ml-transformer',
-                'children': [
-                    { 'name': '<a href="https://www.haoranyou.com/vitcod/">ViTCoD</a>', 'title': 'HPCA 2023', 'className': 'ml-transformer', },
-                    { 'name': '<a href="https://www.haoranyou.com/castling-vit/">Castling-ViT</a>', 'title': 'CVPR 2023', 'className': 'ml-transformer', },
-                ]
-            }
           ]
         },
       ]
     };
+
 
     $('#chart-container').orgchart({
       'data' : datascource,
