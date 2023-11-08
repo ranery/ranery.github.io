@@ -6,10 +6,19 @@
     <description>Recent content in News on Haoran You</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/news/src/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/src/</guid>
+      <description>[11/2023] Haoran won First Place at ACM Student Research Competition (SRC) at ICCAD 2023 !</description>
+    </item>
     
     <item>
       <title></title>
